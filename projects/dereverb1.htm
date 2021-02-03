@@ -1,0 +1,210 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns="http://www.w3.org/TR/REC-html40">
+  <head>
+ <title>Blind Equalization of Long Reverberant Channels</title>
+	<link rel="stylesheet" type="text/css" href="../css/ssp.css" />
+	<script type='text/javascript' src='../include/spp_header.js'></script>
+  </head>
+
+  <body>
+    
+<table width="829" border="0" align="center">
+  <tr> 
+    <td width="823"> 
+      <!-- Display logo of McMaster ECE Department -->
+      <table width="710px" border="0" align="center">
+        <tr>
+          <td align="center"> <img src="../html/images/home_header.gif" border="0" width="600" height="77" ></td>
+        </tr>
+        <tr> 
+          <td align="center" height="50px"> <img src="../html/images/ssp.jpg" width="500" height="50"></td>
+        </tr>
+      </table></td>
+  </tr>
+  <!-- End logo -->
+  <!-- Dispaly menu on top of the page -->
+  <td align="center"> <script type='text/javascript' src='../html/include/menuinfo.js'></script> 
+    <script type='text/javascript' src='../html/include/menu_com.js'></script> 
+    <!-- End display menu -->
+    <!-- Here is where you put your content -->
+    &nbsp; <table width="700px" align="center">
+        &nbsp; 
+        <tr>
+        <td> <center>
+            <H2><B><U>Blind </U></B><u>Deconvolution and Source Separation using 
+              Particle Filtering with Application to the Dereverberation of Speech</u></H2>
+          </center></td>
+      </tr>
+      <tr>
+        <td> <center>
+            <b>Michael Daly, M.A.Sc. Candidate</b></center></td>
+      </tr>
+      <tr>
+        <td> <ul>
+            <li><a class="n" href="#problem definition">Problem Definition</a></li>
+            <li><a class="n" href="#practical applications">Practical Applications</a></li>
+            <li><a class="n" href="#algorithm design">Algorithm Design</a></li>
+            <li><a class="n" href="#algorithm testing">Algorithm Testing with 
+              Real Audio Data</a></li>
+          </ul>
+          <p class="bold"><font size="4"><a name="problem definition"></a> 
+            Problem Definition</font></p>
+          <p class="f" >The reverberation of speech signals can 
+            cause significant degradation in the perceptual quality of speech 
+            at the ear of a person or for an audio recording device. Reverberation 
+            is the effect caused by multiple reflections of sound off the walls, 
+            floor and ceiling of the enclosure from the sound source to the microphone. 
+            Mathematically, this is the convolution of the actual speech with 
+            the long acoustic impulse response (AIR) of the room.</p>
+          <p class="f" align="center" style="text-align: center"> <font size="0">&nbsp;<img border="0" src="../html/projects/dereverb/reverb.png" width="391" height="290"></font></p>
+            <p class="f" >This reverberation is responsible for the 
+              annoying acoustical problem of the so-called <em>barrel effect</em>. 
+              Audio examples are presented here to demonstrate that the recorded 
+              signal in a reverberative room sounds far away, like at the bottom 
+              of a barrel. </p>
+          <ul>
+            <li>Original Speech: <a href="http://www.ece.mcmaster.ca/~reilly/html/projects/dereverb/speechRHINTE.wav"> 
+              <img border="0" src="../html/projects/dereverb/playSound.gif" width="24" height="23"></a></li>
+            <li>Recorded signal with reverberation: <a href="http://www.ece.mcmaster.ca/~reilly/html/projects/dereverb/measurementRHINTE.wav"> 
+              <img border="0" src="../html/projects/dereverb/playSound.gif" width="24" height="23"></a></li>
+          </ul>
+          <p class="f">Another problem that can cause difficulties in speech intelligibility 
+            and audio recording is known as the<i><b> </b> cocktail party phenomenon,</i> 
+            which is caused when multiple speech sources are present simultaneously, 
+            along with other background noise such as moving fans and street traffic. 
+            The undesired speech sources and background noise act as interference 
+            on the desired speech signal. </p>
+          <p class="f">Our goal is to reduce the<i> </i>detrimental effects of 
+            the <i> barrel effect </i>and <i>cocktail party phenomenon </i>on 
+            speech through the use of blind signal processing techniques. These 
+            techniques attempt to determine either the unknown input sources (<i>blind 
+            deconvolution</i> for single source, <i>blind source separation</i> 
+            for multiple sources) or the unknown channel (<i>blind identification</i>) 
+            using only the observed measurement signals.</p>
+          <p class="f">&nbsp;</p></td>
+      </tr>
+      <tr>
+        <td> <p class="bold"><font size="4"><a name="practical applications"></a> 
+            Practical Applications</font></p>
+          <p class="f">Although our primary focus is on audio applications, blind 
+            signal processing for deconvolution and source separation have application 
+            in a wide variety of fields, including:</p>
+          <ul>
+            <li>Hands-free telephony</li>
+            <li>Digital hearing aids</li>
+            <li>Music recording industry</li>
+            <li>Teleconferencing</li>
+            <li>Sonar and underwater acoustic telemetry</li>
+            <li>Biomedical signal processing</li>
+            <li>Geophysics</li>
+          </ul></td>
+      </tr>
+      <tr>
+        <td> <p class="bold"><font size="4"><a name="algorithm design"></a> Algorithm 
+            Design</font></p>
+          <p class="f" style="text-align: left">The nature of typical AIR for 
+            real rooms, as shown in the figure below, introduces three major design 
+            issues to be addressed when developing a blind signal processing algorithm 
+            for dereverberation:</p>
+          <p class="f" style="text-align: center"> <img border="1" src="../html/projects/dereverb/air.png" width="370" height="309"></p>
+          <p class="f"></p>
+          <ol>
+            <li><b>Problem</b>: Typical AIR can be as long as 250 ms (2000 samples), 
+              introducing a large computational cost.&nbsp; <b>Algorithm</b>: 
+              Decompose into smaller independent problems using filterbanks.</li>
+            <li><b>Problem: </b>AIR generally decay smoothly towards zero (“tailed”) 
+              causing <i>blind identification</i> methods to be ill-conditioned. 
+              <b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+              Algorithm: </b>Directly estimate the source (<i>blind deconvolution/source 
+              separation) </i>by marginalizing out the channel to improve computational 
+              stability. </li>
+            <li><b>Problem: </b>The model with both an unknown source and channel 
+              is nonlinear, and in addition the statistics of the sources, channel 
+              and noise can be time-varying.<b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+              Algorithm:</b> Estimate the source using Sequential Monte Carlo 
+              methods (particle filters) to track the time-varying nature of the 
+              speech and acoustics, and handle nonlinear and non-Guassian models. 
+              <b>&nbsp;&nbsp; </b></li>
+          </ol>
+            <p class="bold"><font size="4">Filter Bank Implementation</font></p>
+          <p class="f">To solve the computational tractability issue, we make 
+            use of a special subbanding structure referred to as complex filter 
+            banks or Generalized Discrete Fourier Transform filter banks. These 
+            filter banks inherently suppress aliasing in the subbands, (provided 
+            certain requirements on the analysis filters are met) and thus (approximately) 
+            eliminate the need for cross-filters between subbands. The result 
+            is that one large computationally intractable problem can be decomposed 
+            into many, much smaller, tractable pieces, allowing the overall problem 
+            to be solved. <a class="n" target="_blank" href="../html/papers/matt/rsw_01.pdf">Download 
+            paper</a></p>
+          <p class="bold">Sequential Monte Carlo (Particle Filtering) Methods:</p>
+          <p class="f">The ill-conditioned nature of the problem can be alleviated 
+            by using SMC methods to estimate the speech waveform directly, rather 
+            than blindly estimating or equalizing the channel. The posterior distribution 
+            of the speech given the measurements for a dynamic Bayesian state 
+            space model can be estimated and tracked efficiently using SMC methods. 
+            Results using particle filter expected shortly, while results using 
+            MCMC techniques are available in the following paper:</p>
+          <p class="f" style="text-align: center">&nbsp;<a class="n" href="../html/papers/mike/ICASSP2004.pdf">Blind 
+            Deconvolution using Bayesian Methods with Application to the Dereverberation 
+            of Speech</a> </p>
+          <p class="f">&nbsp;</p></td>
+      </tr>
+      <tr>
+        <td> <p class="bold"><font size="4"><a name="algorithm testing"></a>Algorithm 
+            Testing with Real Audio Data</font></p>
+          <p class="f">An important aspect of the algorithm design is verifying 
+            the performance using collected data from a real reverberative room. 
+            It is anticipated that three sources of data will available for performance 
+            evaluation:</p>
+          <ul>
+            <li>Audio data in a reverberant room recorded with a large microphone 
+              array (Application: music recording, teleconferencing)</li>
+            <li>Audio data in a reverberant room recorded with a head and torso 
+              model (KEMAR) as part of the McMaster Realistic Hearing-In-Noise 
+              Testing Environment System (R-HINT-E).&nbsp; Pictures below. The 
+              acoustic impulse response measurements collected from different 
+              angles, heights, and distances in a reverberative room are used 
+              to provide “soundscapes” for generating realistic signals for algorithm 
+              performance. (Application: hearing aids)</li>
+            <li>Planned for summer 2004: Audio data in a moving car recorded with 
+              a microphone array (Application: hands-free telephony)</li>
+          </ul>
+          <table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse" bordercolor="#111111" width="100%" id="AutoNumber1">
+            <tr> 
+              <td width="50%"> <p align="center" style="text-align: center"> <img border="0" src="../html/projects/dereverb/rhinte.png" width="220" height="297"></td>
+              <td width="50%"> <p align="center" style="text-align: center"> <img border="0" src="../html/projects/dereverb/kemar.png" width="274" height="217"></td>
+            </tr>
+          </table></td>
+      </tr>
+      <tr>
+        <td> <a class="c" href="#top"> <img src = "../html/images/top_pos.gif" border = "0" align="right" width="16" height="27"></a> 
+        </td>
+      </tr>
+    </table></td>
+  <!-- End content -->
+  </tr>
+</table>
+
+
+
+
+     <!-- Begin Footer -->
+      
+<table width="85%" border="0" align="center">
+  <tr>
+  	    <td class=breadcrumb align="center">
+            <br><BR>
+      <a class="n" href="http://www.mcmaster.ca" >&copy; McMaster University 2011</a>&nbsp;&nbsp;| 
+      &nbsp; <a class="n" href="../html/contact/contact.html">Contact Us</a> 
+      &nbsp;&nbsp;| &nbsp; <a class="n" href="mailto:spencer@mail.ece.mcmaster.ca">ECE 
+      Webmaster</a> <BR>
+            <BR>
+          </td>
+        </tr>
+      </table>
+
+    </body>
+
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<head>
+	<title>Blind Source Separation</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+  	<script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+  	<script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+	<link href="css/animate.css" rel="stylesheet"/>
+	<link href="css/waypoints.css" rel="stylesheet"/>
+	<script src="js/jquery.waypoints.min.js" type="text/javascript"></script>
+	<script src="js/waypoints.js" type="text/javascript"></script>
+	
+</head>
+<body>
+
+	<script src="navBar.js"></script>
+<div class="body-content">
+	
+	  <h1>High Bit Rate Compression of Sensor-Generated Images </h1>
+	  <h3>Yashpal Thind, M. Eng. </h3>	
+	
+  <div class = "research-article"><br>
+
+	<h1>The Problem</h1>
+	<p>A popular  method of oil and gas pipeline inspection is through automated magnetic  imaging. The residual intensity image of the interior pipe wall generated  through this process is subsequently analyzed to identify and classify  anomalies and defects. Such a method allows for preventive maintenance of the  pipe in a cost effective manner.</p>
+	<p>	  One of  the major problems involved in this application is the quantity of data. For  example, the robotic device collecting image information can easily collect  1000GB of raw data for typical large pipes. Obviously the exact amount of data  varies according to the sampling rate (typically between 10 to 12 bits/sample),  the number of circumferential sensors located on the device (depends on pipe  diameter), and the length of the pipe. In any case, this quantity of data is  expensive to store and awkward to process. Lossless compression techniques  cannot yield significant compression ratios, whereas traditional lossy  compression (such as JPEG) can eliminate details which are imperative to the  defect detection and quantification process.</p>
+<h1>The Solution</h1>
+<p>The  objective of this research has been to look at wavelets and multiresolution  techniques for effective compression of such images. The broad field of  wavelets offer excellent energy-compacting ability (vanishing moments),  distortion suppression (regularity) characteristics and time-frequency  localization properties that make them ideal candidates for compression  applications. Wavelet methods can be particularly effective when combined with  an effective quantization (such as Zerotree scalar or vector quantization) and  entropy coding scheme (such as Huffman or Arithmetic).</p>
+<h1>The Solution</h1>
+<p>We used a  variation of the well known Embedded Zerotree Wavelet (EZW) algorithm (see J.  Shapiro. Embedded image coding using zerotrees of wavelet coefficients. IEEE  Transactions on Signal Processing, 41(12): 3445-3462, 1993) for effective  compression of such images. Some results of our MATLAB prototype can be seen   below:</p>
+<p>&nbsp;</p>
+	 <center>
+	   <p><img src="html/images/image_yash_x3.jpg" width="700" height="522"></p>
+	   <p>&nbsp;</p>
+	   <p><img src="html/images/image_yash_x7.jpg" width="700" height="522"></p>
+	 </center>
+</div>
+	</div>	
+</body>
+
+
+
+</html>

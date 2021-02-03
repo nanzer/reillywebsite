@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<head>
+	<title>Machine Learning</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+  	<script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+  	<script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+	<link href="css/animate.css" rel="stylesheet"/>
+	<link href="css/waypoints.css" rel="stylesheet"/>
+	<script src="js/jquery.waypoints.min.js" type="text/javascript"></script>
+	<script src="js/waypoints.js" type="text/javascript"></script>
+	
+</head>
+<body>
+	<script src="navBar.js"></script>
+
+	<div class = "body-content">
+	<h1>Blind Deconvolution and Source Separation using Particle Filtering with Application to the Dereverberation of Speech</h1>
+	
+	
+	<div class = "research-article">
+	<h1>Problem Definition</h1>
+	<p>The reverberation of speech signals can cause significant degradation in the perceptual quality of speech at the ear of a person or for an audio recording device. Reverberation is the effect caused by multiple reflections of sound off the walls, floor and ceiling of the enclosure from the sound source to the microphone. Mathematically, this is the convolution of the actual speech with the long acoustic impulse response (AIR) of the room.</p>
+
+	<p><center><img src="http://www.ece.mcmaster.ca/~reilly/html/projects/dereverb/reverb.png"> </center> </p>
+
+	<p>This reverberation is responsible for the annoying acoustical problem of the so-called barrel effect. Audio examples are presented here to demonstrate that the recorded signal in a reverberative room sounds far away, like at the bottom of a barrel.</p>
+	
+	<p><ul>
+	<li><a href="projects/dereverb/speechRHINTE.wav">Original Speech</a></li>
+	<li><a href="projects/dereverb/measurementRHINTE.wav">Recorded signal with reverberation</a></li>
+	</ul>
+	</p>
+
+	<p>Another problem that can cause difficulties in speech intelligibility and audio recording is known as the cocktail party phenomenon, which is caused when multiple speech sources are present simultaneously, along with other background noise such as moving fans and street traffic. The undesired speech sources and background noise act as interference on the desired speech signal.</p>
+
+	<p>Our goal is to reduce the detrimental effects of the barrel effect and cocktail party phenomenon on speech through the use of blind signal processing techniques. These techniques attempt to determine either the unknown input sources (blind deconvolution for single source, blind source separation for multiple sources) or the unknown channel (blind identification) using only the observed measurement signals.</p>
+
+	</div>
+	
+	<div class = "research-article">
+	<h1>Practical Applications</h1>
+	<p> Although our primary focus is on audio applications, blind signal processing for deconvolution and source separation have application in a wide variety of fields, including: </p>
+    <ul>
+	<li>Hands-free telephony</li>
+	<li>Digital hearing aids</li>
+    <li>Music recording industry</li>
+    <li>Teleconferencing</li>
+	<li>Sonar and underwater acoustic telemetry</li>
+    <li>Biomedical signal processing</li>
+    <li>Geophysics</li>
+	</ul>
+	</div>
+	
+	<div class = "research-article">
+	<h1>Algorithm Design</h1>
+	<p>The nature of typical AIR for real rooms, as shown in the figure below, introduces three major design issues to be addressed when developing a blind signal processing algorithm for dereverberation:</p> 
+
+	<p><center><img src="http://www.ece.mcmaster.ca/~reilly/html/projects/dereverb/air.png"></center></p>
+	
+	<ol>
+	<li><b>Problem:</b> Typical AIR can be as long as 250 ms (2000 samples), introducing a large computational cost. </br>
+	<b>Algorithm:</b> Decompose into smaller independent problems using filterbanks. </li>
+	<li><b>Problem:</b> AIR generally decay smoothly towards zero ("tailed") causing blind identification methods to be ill-conditioned. </br>
+	<b>Algorithm:</b> Directly estimate the source (blind deconvolution/source separation) by marginalizing out the channel to improve computational stability. </li>
+	<li><b>Problem:</b> The model with both an unknown source and channel is nonlinear, and in addition the statistics of the sources, channel and noise can be time-varying. </br> 
+	<b>Algorithm:</b> Estimate the source using Sequential Monte Carlo methods (particle filters) to track the time-varying nature of the speech and acoustics, and handle nonlinear and non-Guassian models.</li>
+
+	</ol>
+	</div>
+	
+	<div class = "research-article">
+	<h1>Filter Bank Implementation</h1>
+	<p>To solve the computational tractability issue, we make use of a special subbanding structure referred to as complex filter banks or Generalized Discrete Fourier Transform filter banks. These filter banks inherently suppress aliasing in the subbands, (provided certain requirements on the analysis filters are met) and thus (approximately) eliminate the need for cross-filters between subbands. The result is that one large computationally intractable problem can be decomposed into many, much smaller, tractable pieces, allowing the overall problem to be solved. <a href="papers/matt/rsw_01.pdf" target="_blank">Download paper</a></p>
+
+	<p>Sequential Monte Carlo (Particle Filtering) Methods:</p>
+
+	<p>The ill-conditioned nature of the problem can be alleviated by using SMC methods to estimate the speech waveform directly, rather than blindly estimating or equalizing the channel. The posterior distribution of the speech given the measurements for a dynamic Bayesian state space model can be estimated and tracked efficiently using SMC methods. Results using particle filter expected shortly, while results using MCMC techniques are available in this  paper: <a href="papers/mike/ICASSP2004.pdf" target="_blank">Blind Deconvolution using Bayesian Methods with Application to the Dereverberation of Speech</a></p>
+
+	</div>
+
+	<div class = "research-article">
+	<h1>Algorithm Testing with Real Audio Data</h1>
+	<p>An important aspect of the algorithm design is verifying the performance using collected data from a real reverberative room. It is anticipated that three sources of data will available for performance evaluation:</p>
+    <ul>
+	<li>Audio data in a reverberant room recorded with a large microphone array (Application: music recording, teleconferencing)</li>
+	<li>Audio data in a reverberant room recorded with a head and torso model (KEMAR) as part of the McMaster Realistic Hearing-In-Noise Testing Environment System (R-HINT-E).  Pictures below. The acoustic impulse response measurements collected from different angles, heights, and distances in a reverberative room are used to provide "soundscapes" for generating realistic signals for algorithm performance. (Application: hearing aids)</li>
+    <li>Planned for summer 2004: Audio data in a moving car recorded with a microphone array (Application: hands-free telephony)</li>
+    </ul>
+
+	<article><img src="projects/dereverb/rhinte.png"></article>
+	<article><img src="projects/dereverb/kemar.png"></article>
+    
+	</div>
+
+</div>
+	
+
+
+
+</body>
+
+
+
+</html>

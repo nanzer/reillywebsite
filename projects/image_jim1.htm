@@ -1,0 +1,195 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+  <head>
+    <title>Blind Deconvolution for Image Enhancement</title>
+	<link rel="stylesheet" type="text/css" href="../css/ssp.css" />
+	<script type='text/javascript' src='../include/spp_header.js'></script>
+  </head>
+
+  <body>
+    
+<table width="85%" border="0" align="center">
+  <tr> 
+    <td> 
+      <!-- Display logo of McMaster ECE Department -->
+      <table width="710px" border="0" align="center">
+        <tr> 
+          <td align="center"><img src="../html/images/home_header.gif" width="600" height="77" border="0" ></td>
+        </tr>
+        <tr> 
+          <td align="center" height="50px"><img src="../html/images/ssp.jpg" width="500" height="50"></td>
+        </tr>
+      </table></td>
+  </tr>
+  <!-- End logo -->
+  <!-- Dispaly menu on top of the page -->
+    <td align="center"> <p>
+        <script type='text/javascript' src='../html/include/menuinfo.js'></script>
+        <script type='text/javascript' src='../html/include/menu_com.js'></script>
+        <!-- End display menu -->
+        <!-- Here is where you put your content -->
+      </p>
+      <table width="700px" align="center">
+        <br>
+        <br>
+        <tr> 
+          <td> <center>
+              <H2><B><u>Signal Processing for Enhanced Pipeline Inspection</B></u></H2>
+            </center></td>
+        </tr>
+        <tr> 
+          <td> <center>
+              <B>Jim Hare (<a class="n" href="mailto:hare@reverb.crl.mcmaster.ca">hare@reverb.crl.mcmaster.ca</a>)</B></center></td>
+        </tr>
+        <tr> 
+          <td> <br> <p class="bold"><font size="4">Project Overview</font></p>
+            <p class="f">This project has to do with non-destructive testing of 
+              installed pipelines. Oil and gas carried by the pipelines can contain 
+              relatively high levels of sulphur, which is corrosive to the steel 
+              pipe. If this corrosion is left unchecked, it may result in rupture 
+              of the pipeline. The ensuing environmental damage would be catastrophic. 
+              Pipelines must therefore be closely monitored and inspected to ensure 
+              that any corrosion or defects in the pipe wall have not affected 
+              the integrity of the pipe. The preferred method of inspection is 
+              to collect data using an autonomous device referred to as a "pig" 
+              or inspection tool, that is propelled down the pipeline by the natural 
+              flow of oil or gas transport. This device, after inducing a magnetic 
+              field to flow through the pipe wall, measures flux leakage using 
+              Hall effect sensors, which are located all around the circumference 
+              of the pig. When the sensors travel by an area where there is an 
+              anomaly of some kind in the pipe wall, there is a resulting fringing 
+              effect in the flux leakages that leads to a change in output level 
+              from the sensors. The sensor outputs are stored on-board the pig. 
+              The data gathered in this way constitute an image of the interior 
+              of the entire pipe. The business of the industrial sponsor, Pipetronix 
+              Ltd., is to provide such a pipeline inspection service to its clients.</p></td>
+        </tr>
+        <tr> 
+          <td><ul>
+              <br>
+              <li><a href="#Relevant" class="n">Relevant points regarding this 
+                imaging process</a></li>
+              <li><a href="#Images" class="n">Typical Images</a></li>
+              <li><a href="#Problem" class="n">The Problem</a><br>
+              </li>
+            </ul></td>
+        </tr>
+        <tr> 
+          <td> <a class="n" name="Relevant"></a> <font size="4">Relevant points 
+            regarding this imaging process</font> <ul>
+              <li>Potentially harmful defects caused by corrosion in the interior 
+                pipe surface are easily detected by this magnetic technique. The 
+                detection of the defects themselves, and the determination of 
+                the size and shape of these defects are the primary reasons why 
+                the pipeline is inspected, and hence are the items of critical 
+                concern to the client.</li>
+              <li>A direct technique for fabricating pipelines is to bend steel 
+                sheets into cylinders (referred to as "long seam" pipes). The 
+                cylinders are then butt-welded (to form "girth welds") together 
+                on-site. The images of the resulting long seam and girth welds, 
+                which constitute a completed pipeline section, are items of interest 
+                to Pipetronix and its clients.</li>
+              <li>Another more sophisticated technique for the fabrication of 
+                pipe is to force a mandrill down the centre of a red-hot cylindrical 
+                section of steel. The pipe is formed after several passes with 
+                successively larger mandrills. This type of pipe is referred to 
+                as "seamless". This process results in pipe which is scored on 
+                the inside. This scoring results in a significant level of background 
+                "noise" in the magnetic image, and can obscure significant defects 
+                or other areas of concern.</li>
+              <li>A pipeline usually contains flanges, fittings, valves, etc. 
+                , of various sorts. The identification and location of these items 
+                is of interest to the client.</li>
+              <li>Currently, a simple image compression algorithm is used in storing 
+                the data on-board the pig. This algorithm introduces occasional 
+                anomalies into the reconstructed image, referred to as "reset 
+                noise". It is important to identify this noise as a distinct class 
+                of object so that it is not confused with an actual item of interest.</li>
+              <li>The magnetic sensors have a point-spread function (PSF) of significant 
+                width, in both dimensions. This PSF is not known a priori, since 
+                it changes over varying conditions encountered on a run. The effect 
+                of this PSF is to blur and degrade the image quality.</li>
+            </ul>
+            <a class="c" href="#top"><img src = "../html/images/top_pos.gif" width="16" height="27" border = "0" align="right"></a> 
+          </td>
+        </tr>
+        <tr> 
+          <td> <a class="n" name="Images"></a> <font size="4">Typical Images</font> 
+            <p class="f">A typical magnetic image of a section of <em>long seam</em> 
+              pipe is shown in <a class="n" href="../html/images/image_jim_fig11.jpg"> 
+              Fig. 1</a>. The vertical axis is the circumferential direction of 
+              the pipe (sensor index), whereas the horizontal axis is along the 
+              axial direction of the pipe (time-sample index). Colour represents 
+              magnetic intensity, going from red (least metal) to blue (most metal). 
+              The letters "D", "R", and "W" represent regions of defect, reset 
+              noise, and girth weld, respectively.</p>
+            <p class="f">A typical magnetic image of a section of <em>seamless</em> 
+              pipe is shown in <a class="n" href="../html/images/image_jim_fig21.jpg"> 
+              Fig. 2</a>. The background noise characteristic due to the scoring 
+              of the pipe during fabrication is clearly evident. In view of the 
+              fact many of the red areas are NOT defects, it is also evident from 
+              the figure how defects (marked as before with a "D") can be obscured 
+              by the noise. We note that the noise characteristic is far from 
+              white in both spatial dimensions. This fact enables gains to be 
+              made in the detection of defects by using intelligent signal processing 
+              schemes.</p>
+            <br></td>
+        </tr>
+        <tr> 
+          <td> <a class="n" name="Problem"></a> <font size="4">The Problem</font> 
+            <p class="f">Currently, the stored data collected from the pig is 
+              analyzed by human operator, to identify regions of defect, weld 
+              types, etc. The intent of this co-operative research and development 
+              (CRD) project is to develop methods for streamlining and automating 
+              this analysis process. This poses many interesting and challenging 
+              signal and image processing problems including:</p>
+            <ul>
+              <li>The classification of installation type: seamless or non-seamless. 
+              </li>
+              <li>The classification and detection of all objects of interest: 
+                defects, welds, areas of metal gain and metal loss, reset noise, 
+                flanges, etc. , into their respective classes. </li>
+              <li>The detection of defects that are masked by the background noise 
+                in seamless pipe.</li>
+              <li>The compression of data: The quantity of data generated by the 
+                magnetic scanning process is huge. Therefore, there is a demand 
+                for state-of-the-art image compression techniques which can reduce 
+                the quantity of data which must be stored on-board the pig to 
+                a minimum, while still preserving the best possible reconstructed 
+                image quality.</li>
+              <li>The deconvolution of the image with the point spread function 
+                (PSF) of the sensors, to produce an image of enhanced resolution. 
+                This will improve classification performance and detectability 
+                of defects, and will also aid in the assessment of the severity 
+                of defects. Since the PSF is unknown and cannot be reliably determined 
+                by conventional means, the deconvolution must be done <i>blindly.</i></li>
+            </ul>
+            <a class="c" href="#top"><img src = "../html/images/top_pos.gif" width="16" height="27" border = "0" align="right"></a> 
+          </td>
+        </tr>
+      </table></td>
+  <!-- End content -->
+  </tr>
+</table>
+
+
+
+
+       <!-- Begin Footer -->
+	    <table border="0" width="85%" align="center">
+	      <tr>
+		    <td width="923" align="center" class=breadcrumb>
+	          <br><BR>
+      <a class="n" href="http://www.mcmaster.ca" >&copy; McMaster University 2011</a>&nbsp;&nbsp;| 
+      &nbsp; <a class="n" href="../html/contact/contact.html">Contact Us</a> 
+      &nbsp;&nbsp;| &nbsp; <a class="n" href="mailto:spencer@mail.ece.mcmaster.ca">ECE 
+      Webmaster</a> <BR>
+	          <BR>
+	        </td>
+	      </tr>
+	    </table>
+
+	  </body>
+
+</html>

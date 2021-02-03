@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<head>
+	<title>Blind Source Separation</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+  	<script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+  	<script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+	<link href="css/animate.css" rel="stylesheet"/>
+	<link href="css/waypoints.css" rel="stylesheet"/>
+	<script src="js/jquery.waypoints.min.js" type="text/javascript"></script>
+	<script src="js/waypoints.js" type="text/javascript"></script>
+	
+</head>
+<body>
+
+	<script src="navBar.js"></script>
+
+	<div class = "body-content">
+	<h1>Blind Source Separation</h1>
+	
+	
+	<div class = "research-article">
+	<h1>Problem Definition</h1>
+	<p>Blind Source Separation (BSS) problem arises in several different fields of study. In speech communication, a microphone in a room can simultaneously receive a mixture of several speech signals that need to be separated to render intelligible results. In biological studies, the sensors receive different electrical excitations where usually only one is of interest. In rotating machine vibration analysis for fault diagnosis, it is desired to separate the vibration due to faulty components. In each case, at least N sensors receive mixtures of N (statistically independent) sources. The objective is to restore (separate) the sources by observing only the mixtures. There are two classes of BSS algorithm, depending on the mixing process. In the scalar or instantaneous mixing case, the transfer function from each source to each sensor is a simple scalar. In the convolutive case, this transfer function is dynamic, with a nontrivial impulse response. In the vast majority of practical applications, the mixing is convolutive. Unfortunately, the BSS problem is far more difficult for the convolutive case than for the scalar case. Nevertheless, it is very important to develop a good solution for the instantaneous case, before extending it to the convolutive mixing problem. In this research, we are focusing on both of these cases, but with more emphasis on convolutive blind signal separation, since it has more practical significance.</p>
+	
+	<h1>Real Room Recordings Audio Samples</h1>
+	<p>Matlab code implementing the blind source separation algorithm on data collected in a reverberant room is available on request by emailing  Dr. Reilly: <a href="mailto:reillyj@mcmaster.ca">reillyj@mcmaster.ca</a></p>
+	<p><b>1. Results for recordings in an office room</b></p>
+	<p>Example 1: Speech & Speech</p>
+	 <center><img src="kamran/0612ec20.gif"></center>
+	<p> <ul>
+	<li><a href="kamran/audio/office_speech_x1.wav">Record Signal 1</a></li>
+	<li><a href="kamran/audio/office_speech_x2.wav">Record Signal 2</a></li>
+	<li><a href="kamran/audio/office_speech_x3.wav">Record Signal 3</a></li>
+	<li><a href="kamran/audio/office_speech_x4.wav">Record Signal 4</a></li>
+	<li><a href="kamran/audio/office_speech_out1.wav">Separated Output 1</a></li>
+	<li><a href="kamran/audio/office_speech_out2.wav">Separated Output 2</a></li>
+	</ul>
+	<p>
+	
+	<p>Example 2: Speech & Music</p>
+	 <center><img src="kamran/062fbf70.gif"></center>
+	<p> <ul>
+	<li><a href="kamran/audio/office_gitar_x1.wav">Record Signal 1</a></li>
+	<li><a href="kamran/audio/office_gitar_x2.wav">Record Signal 2</a></li>
+	<li><a href="kamran/audio/office_gitar_x3.wav">Record Signal 3</a></li>
+	<li><a href="kamran/audio/office_gitar_x4.wav">Record Signal 4</a></li>
+	<li><a href="kamran/audio/office_gitar_out1.wav">Separated Output 1</a></li>
+	<li><a href="kamran/audio/office_gitar_out2.wav">Separated Output 2</a></li>
+	</ul>
+	<p>
+	
+	<p><b>2. Results for recordings in a conference room</b></p>
+	<p>Example 1: Speech & Music</p>
+	<p> <ul>
+	<li><a href="kamran/audio/conf_gitar_x1.wav">Record Signal 1</a></li>
+	<li><a href="kamran/audio/conf_gitar_x2.wav">Record Signal 2</a></li>
+	<li><a href="kamran/audio/conf_gitar_x3.wav">Record Signal 3</a></li>
+	<li><a href="kamran/audio/conf_gitar_x4.wav">Record Signal 4</a></li>
+	<li><a href="kamran/audio/conf_gitar_out1.wav">Separated Output 1</a></li>
+	<li><a href="kamran/audio/conf_gitar_out2.wav">Separated Output 2</a></li>
+	</ul>
+	<p>
+	
+	<p><b>3. Results for recordings done by other researchers</b></p>
+	<p>For this example we used the real room recordings done by Lucas parra and Te-won Lee. The recordings have been downloaded from Lucas parra website.</p>
+
+	<p>Contributed By Te-Won Lee</p>
+	<p> <ul>
+	<li><a href="kamran/audio/lee_ina.wav">Record Signal 1</a></li>
+	<li><a href="kamran/audio/lee_inb.wav">Record Signal 2</a></li>
+	<li><a href="kamran/audio/lee_outa_apr9.wav">Separated Output 1</a></li>
+	<li><a href="kamran/audio/lee_outb_apr9.wav">Separated Output 2</a></li>
+	</ul>
+	<p>
+	
+	<p>Contributed By Lucas Parra</p>
+	<p> <ul>
+	<li><a href="kamran/audio/lucas_tv_in_1.wav">Record Signal 1</a></li>
+	<li><a href="kamran/audio/lucas_tv_in_2.wav">Record Signal 2</a></li>
+	<li><a href="kamran/audio/parra_out1_march23_2.wav">Separated Output 1</a></li>
+	<li><a href="kamran/audio/parra_out2_march23_2.wav">Separated Output 2</a></li>
+	</ul>
+	<p>
+	
+	<h1>Research Update</h1>
+	<p><strong>Presented In ICASSP 2001</strong></p>
+<p><b>Abstract:</b><br>     
+
+	In this paper we present a new method for separating
+	non-stationary sources from their convolutive mixtures based on
+	approximate joint diagonalizing of the observed signals'
+	cross-spectral density matrices. Several blind source separation
+	(BSS) algorithms have been proposed which use approximate joint
+	diagonalization of a set of scalar matrices to estimate the
+	instantaneous mixing matrix. We extend the concept of approximate
+	joint diagonalization to estimate MIMO FIR channels. Based on this
+	estimate we then design a separating network which will recover
+	the original sources up to only a permutation and scaling
+	ambiguity for minimum phase channels.  We eliminate the commonly
+	experienced problem of arbitrary scaling and permutation at each
+	frequency bin, by optimizing the cost function directly with
+	respect to the time-domain channel variables.</p>
+	
+	<p><strong>Submitted to ICA 2001</strong></p>
+
+	<p><b>Abstract:</b><br>     
+
+	We consider the problem of blind sources separation of MIMO
+	convolutive mixtures for general case that number of sensors are
+	greater than or equal to the number of sources. We assume that
+	sources are non-stationary signals. The separation is performed in
+	frequency domain by joint minimization of the off diagonal
+	elements of observed signal's cross-spectral density matrices over
+	different epochs. We propose an efficient modified Newton
+	algorithm to minimize the cost function. We resolve the permutation 
+	problem using a tree structured dyadic detection scheme. We find 
+	and correct the wrong permutation at each frequency bin based on
+	cross frequency correlation between diagonal elements of the output
+	cross spectral matrices. </p>
+
+</div>
+	</div>
+</body>
+
+
+
+</html>

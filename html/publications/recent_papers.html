@@ -1,0 +1,1856 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns:m="http://schemas.microsoft.com/office/2004/12/omml"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=us-ascii">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 15">
+<meta name=Originator content="Microsoft Word 15">
+<link rel=File-List href="recent_papers_files/filelist.xml">
+<link rel=Edit-Time-Data href="recent_papers_files/editdata.mso">
+<!--[if !mso]>
+<style>
+v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style>
+<![endif]-->
+<title>Statistical Signal Processing</title>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>Jim Reilly</o:Author>
+  <o:Template>Normal</o:Template>
+  <o:LastAuthor>Jim Reilly</o:LastAuthor>
+  <o:Revision>26</o:Revision>
+  <o:TotalTime>140</o:TotalTime>
+  <o:Created>2014-02-27T22:15:00Z</o:Created>
+  <o:LastSaved>2014-02-28T18:04:00Z</o:LastSaved>
+  <o:Pages>4</o:Pages>
+  <o:Words>1631</o:Words>
+  <o:Characters>9303</o:Characters>
+  <o:Company>McMaster University</o:Company>
+  <o:Lines>77</o:Lines>
+  <o:Paragraphs>21</o:Paragraphs>
+  <o:CharactersWithSpaces>10913</o:CharactersWithSpaces>
+  <o:Version>15.00</o:Version>
+ </o:DocumentProperties>
+ <o:OfficeDocumentSettings>
+  <o:AllowPNG/>
+ </o:OfficeDocumentSettings>
+</xml><![endif]-->
+<link rel=themeData href="recent_papers_files/themedata.thmx">
+<link rel=colorSchemeMapping href="recent_papers_files/colorschememapping.xml">
+<!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:View>Print</w:View>
+  <w:TrackMoves>false</w:TrackMoves>
+  <w:TrackFormatting/>
+  <w:ValidateAgainstSchemas/>
+  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+  <w:DoNotPromoteQF/>
+  <w:LidThemeOther>EN-US</w:LidThemeOther>
+  <w:LidThemeAsian>X-NONE</w:LidThemeAsian>
+  <w:LidThemeComplexScript>X-NONE</w:LidThemeComplexScript>
+  <w:Compatibility>
+   <w:BreakWrappedTables/>
+   <w:SplitPgBreakAndParaMark/>
+  </w:Compatibility>
+  <m:mathPr>
+   <m:mathFont m:val="Cambria Math"/>
+   <m:brkBin m:val="before"/>
+   <m:brkBinSub m:val="&#45;-"/>
+   <m:smallFrac m:val="off"/>
+   <m:dispDef/>
+   <m:lMargin m:val="0"/>
+   <m:rMargin m:val="0"/>
+   <m:defJc m:val="centerGroup"/>
+   <m:wrapIndent m:val="1440"/>
+   <m:intLim m:val="subSup"/>
+   <m:naryLim m:val="undOvr"/>
+  </m:mathPr></w:WordDocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:LatentStyles DefLockedState="false" DefUnhideWhenUsed="false"
+  DefSemiHidden="false" DefQFormat="false" DefPriority="99"
+  LatentStyleCount="371">
+  <w:LsdException Locked="false" Priority="0" QFormat="true" Name="Normal"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 1"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 2"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 3"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 4"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 5"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 6"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 7"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 8"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 9"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 6"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 7"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 8"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 9"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 1"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 2"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 3"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 4"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 5"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 6"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 7"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 8"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 9"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Normal Indent"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="footnote text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="annotation text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="header"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="footer"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index heading"/>
+  <w:LsdException Locked="false" Priority="35" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="caption"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="table of figures"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="envelope address"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="envelope return"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="footnote reference"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="annotation reference"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="line number"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="page number"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="endnote reference"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="endnote text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="table of authorities"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="macro"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="toa heading"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Bullet"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Number"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Bullet 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Bullet 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Bullet 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Bullet 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Number 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Number 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Number 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Number 5"/>
+  <w:LsdException Locked="false" Priority="10" QFormat="true" Name="Title"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Closing"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Signature"/>
+  <w:LsdException Locked="false" Priority="1" SemiHidden="true"
+   UnhideWhenUsed="true" Name="Default Paragraph Font"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text Indent"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Continue"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Continue 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Continue 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Continue 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Continue 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Message Header"/>
+  <w:LsdException Locked="false" Priority="11" QFormat="true" Name="Subtitle"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Salutation"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Date"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text First Indent"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text First Indent 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Note Heading"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text Indent 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text Indent 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Block Text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Hyperlink"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="FollowedHyperlink"/>
+  <w:LsdException Locked="false" Priority="22" QFormat="true" Name="Strong"/>
+  <w:LsdException Locked="false" Priority="20" QFormat="true" Name="Emphasis"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Document Map"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Plain Text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="E-mail Signature"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Top of Form"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Bottom of Form"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Normal (Web)"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Acronym"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Address"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Cite"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Code"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Definition"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Keyboard"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Preformatted"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Sample"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Typewriter"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Variable"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Normal Table"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="annotation subject"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="No List"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Outline List 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Outline List 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Outline List 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Simple 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Simple 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Simple 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Classic 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Classic 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Classic 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Classic 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Colorful 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Colorful 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Colorful 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Columns 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Columns 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Columns 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Columns 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Columns 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 6"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 7"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 8"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 6"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 7"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 8"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table 3D effects 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table 3D effects 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table 3D effects 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Contemporary"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Elegant"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Professional"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Subtle 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Subtle 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Web 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Web 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Web 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Balloon Text"/>
+  <w:LsdException Locked="false" Priority="39" Name="Table Grid"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Theme"/>
+  <w:LsdException Locked="false" SemiHidden="true" Name="Placeholder Text"/>
+  <w:LsdException Locked="false" Priority="1" QFormat="true" Name="No Spacing"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 1"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 1"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 1"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 1"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" Name="Revision"/>
+  <w:LsdException Locked="false" Priority="34" QFormat="true"
+   Name="List Paragraph"/>
+  <w:LsdException Locked="false" Priority="29" QFormat="true" Name="Quote"/>
+  <w:LsdException Locked="false" Priority="30" QFormat="true"
+   Name="Intense Quote"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 1"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 1"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 1"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 1"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 1"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 1"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 2"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 2"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 2"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 2"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 2"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 2"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 2"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 2"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 3"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 3"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 3"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 3"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 3"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 3"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 3"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 3"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 4"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 4"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 4"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 4"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 4"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 4"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 4"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 4"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 5"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 5"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 5"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 5"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 5"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 5"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 5"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 5"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 6"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 6"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 6"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 6"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 6"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 6"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 6"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 6"/>
+  <w:LsdException Locked="false" Priority="19" QFormat="true"
+   Name="Subtle Emphasis"/>
+  <w:LsdException Locked="false" Priority="21" QFormat="true"
+   Name="Intense Emphasis"/>
+  <w:LsdException Locked="false" Priority="31" QFormat="true"
+   Name="Subtle Reference"/>
+  <w:LsdException Locked="false" Priority="32" QFormat="true"
+   Name="Intense Reference"/>
+  <w:LsdException Locked="false" Priority="33" QFormat="true" Name="Book Title"/>
+  <w:LsdException Locked="false" Priority="37" SemiHidden="true"
+   UnhideWhenUsed="true" Name="Bibliography"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="TOC Heading"/>
+  <w:LsdException Locked="false" Priority="41" Name="Plain Table 1"/>
+  <w:LsdException Locked="false" Priority="42" Name="Plain Table 2"/>
+  <w:LsdException Locked="false" Priority="43" Name="Plain Table 3"/>
+  <w:LsdException Locked="false" Priority="44" Name="Plain Table 4"/>
+  <w:LsdException Locked="false" Priority="45" Name="Plain Table 5"/>
+  <w:LsdException Locked="false" Priority="40" Name="Grid Table Light"/>
+  <w:LsdException Locked="false" Priority="46" Name="Grid Table 1 Light"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark"/>
+  <w:LsdException Locked="false" Priority="51" Name="Grid Table 6 Colorful"/>
+  <w:LsdException Locked="false" Priority="52" Name="Grid Table 7 Colorful"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 1"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 1"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 1"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 1"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 1"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 1"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 2"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 2"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 2"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 2"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 2"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 2"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 3"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 3"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 3"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 3"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 3"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 3"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 4"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 4"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 4"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 4"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 4"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 4"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 5"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 5"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 5"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 5"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 5"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 5"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 6"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 6"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 6"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 6"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 6"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 6"/>
+  <w:LsdException Locked="false" Priority="46" Name="List Table 1 Light"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark"/>
+  <w:LsdException Locked="false" Priority="51" Name="List Table 6 Colorful"/>
+  <w:LsdException Locked="false" Priority="52" Name="List Table 7 Colorful"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 1"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 1"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 1"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 1"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 1"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 1"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 2"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 2"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 2"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 2"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 2"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 2"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 3"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 3"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 3"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 3"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 3"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 3"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 4"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 4"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 4"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 4"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 4"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 4"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 5"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 5"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 5"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 5"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 5"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 5"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 6"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 6"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 6"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 6"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 6"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 6"/>
+ </w:LatentStyles>
+</xml><![endif]-->
+<link rel=Stylesheet type="text/css" media=all href="../../css/ssp.css">
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:roman;
+	mso-font-pitch:variable;
+	mso-font-signature:-536870145 1107305727 0 0 415 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-parent:"";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;}
+a:link, span.MsoHyperlink
+	{mso-style-priority:99;
+	color:blue;
+	text-decoration:underline;
+	text-underline:single;}
+a:visited, span.MsoHyperlinkFollowed
+	{mso-style-noshow:yes;
+	mso-style-priority:99;
+	color:purple;
+	text-decoration:underline;
+	text-underline:single;}
+p
+	{mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-margin-top-alt:auto;
+	margin-right:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	mso-default-props:yes;
+	font-size:10.0pt;
+	mso-ansi-font-size:10.0pt;
+	mso-bidi-font-size:10.0pt;}
+@page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-paper-source:0;}
+div.WordSection1
+	{page:WordSection1;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Table Normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-parent:"";
+	mso-padding-alt:0in 5.4pt 0in 5.4pt;
+	mso-para-margin:0in;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman","serif";}
+</style>
+<![endif]-->
+<script  type="text/javascript" src="../../include/spp_header.js">
+</script>
+<!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="1041"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+</head>
+
+<body lang=EN-US link=blue vlink=purple style='tab-interval:.5in'>
+
+<div class=WordSection1>
+
+<div align=center>
+
+<table class=MsoNormalTable border=0 cellpadding=0 width=830 style='width:622.5pt;
+ mso-cellspacing:1.5pt;mso-yfti-tbllook:1184'>
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes'>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <div align=center>
+  <table class=MsoNormalTable border=0 cellpadding=0 style='mso-cellspacing:
+   1.5pt;mso-yfti-tbllook:1184'>
+   <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes'>
+    <td style='padding:.75pt .75pt .75pt .75pt'>
+    <p class=MsoNormal align=center style='text-align:center'><span
+    style='mso-fareast-font-family:"Times New Roman";mso-no-proof:yes'><img
+    width=600 height=77 id="_x0000_i1039" src="../images/home_header.gif"></span><span
+    style='mso-fareast-font-family:"Times New Roman"'><o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:1;mso-yfti-lastrow:yes'>
+    <td style='padding:.75pt .75pt .75pt .75pt'>
+    <p class=MsoNormal align=center style='text-align:center'><span
+    style='mso-fareast-font-family:"Times New Roman";mso-no-proof:yes'><img
+    width=500 height=50 id="_x0000_i1038" src="../images/ssp.jpg"></span><span
+    style='mso-fareast-font-family:"Times New Roman"'><o:p></o:p></span></p>
+    </td>
+   </tr>
+  </table>
+  </div>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:1;mso-yfti-lastrow:yes'>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-fareast-font-family:
+  "Times New Roman"'><script  type="text/javascript" src="../include/menuinfo.js">
+  </script><script  type="text/javascript" src="../include/menu_com.js">
+  </script></span><span style='mso-fareast-font-family:"Times New Roman";
+  display:none;mso-hide:all'><o:p>&nbsp;</o:p></span></p>
+  <div align=center>
+  <table class=MsoNormalTable border=0 cellpadding=0 width=730
+   style='width:547.5pt;mso-cellspacing:1.5pt;mso-yfti-tbllook:1184;mso-padding-alt:
+   1.5pt 1.5pt 1.5pt 1.5pt'>
+   <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes'>
+    <td colspan=3 style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+    <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'><br>
+    </span><span style='mso-fareast-font-family:"Times New Roman";mso-no-proof:
+    yes'><img width=200 height=33 id="_x0000_i1037"
+    src="../images/recent_full_papers.jpg"></span><span style='mso-fareast-font-family:
+    "Times New Roman"'><o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:1'>
+    <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+    <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'>&nbsp;Updated
+    Feb. 2014<o:p></o:p></span></p>
+    </td>
+    <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+    <p class=MsoNormal align=right style='text-align:right'><span
+    style='mso-fareast-font-family:"Times New Roman"'>&nbsp;<o:p></o:p></span></p>
+    </td>
+    <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+    <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'>&nbsp;<o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:2'>
+    <td width=666 style='width:499.45pt;padding:1.5pt 1.5pt 1.5pt 1.5pt'></td>
+    <td width=36 style='width:27.0pt;padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+    <p class=MsoNormal align=right style='text-align:right'><span
+    style='mso-fareast-font-family:"Times New Roman"'><a
+    href="../papers/2011_journals/Mourad_Kiruba.pdf" target="_blank"></a><o:p></o:p></span></p>
+    </td>
+    <td width=20 style='width:15.05pt;padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+    <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'><a
+    href="#top"></a><o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:3'>
+    <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+    <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'>&nbsp;<o:p></o:p></span></p>
+    </td>
+    <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+    <p class=MsoNormal align=right style='text-align:right'><span
+    style='mso-fareast-font-family:"Times New Roman"'>&nbsp;<o:p></o:p></span></p>
+    </td>
+    <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+    <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'>&nbsp;<o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:4'>
+    <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+    <p class=MsoNormal style='margin-left:.5in;text-indent:-.5in;tab-stops:
+    -1.0in'><span style='mso-fareast-font-family:"Times New Roman"'>Recursive
+    Hidden Input Estimation in Nonlinear Dynamic Systems with Varying Amounts
+    of <i style='mso-bidi-font-style:normal'>a priori</i> Knowledge.<span
+    style='mso-spacerun:yes'>&nbsp; </span><i style='mso-bidi-font-style:normal'>Signal
+    Processing</i>, Volume 99, June 2014, Pages 171-184,</span><span
+    style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:
+    "Times New Roman"'><o:p></o:p></span></p>
+    <p class=MsoNormal><strong><span style='mso-fareast-font-family:"Times New Roman"'>U.
+    Gunturkan, James P. Reilly, Hubert deBruin and T. Kirubarajan</span></strong><span
+    style='mso-fareast-font-family:"Times New Roman"'> <br>
+    <a href="../abstract/Gunturkan.html"><strong>Abstract</strong></a><span
+    style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    </span><a href="../papers/2011_journals/Gunturkan.pdf">download</a><o:p></o:p></span></p>
+    <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'><o:p>&nbsp;</o:p></span></p>
+    <p class=MsoNormal style='tab-stops:-1.0in'><o:p>&nbsp;</o:p></p>
+    <p class=MsoNormal style='margin-left:.5in;text-indent:-.5in;tab-stops:
+    -1.0in'>A Machine Learning Approach Using EEG Data to Predict Response to
+    SSRI Treatment for Major Depressive Disorder&#8221;, <i>Clinical
+    Neurophysiology</i>, Vol. 124, No. 10, Oct. 2013, pp. 1975 - 1985.<span
+    style='mso-fareast-font-family:"Times New Roman";mso-no-proof:yes'> </span><b
+    style='mso-bidi-font-weight:normal'>A. Khodayari-Rostamabad, J.P. Reilly,
+    G.M. Hasey, H. de Bruin and D.J. MacCrimmon<o:p></o:p></b></p>
+    <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'><a
+    href="../abstract/abstract%20SSRI%20clin%20neuro.pdf"><strong>Abstract</strong></a><span
+    style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    </span><a href="../papers/2013%20journal/A%20machine%20learning%20approach.pdf">download</a><o:p></o:p></span></p>
+    <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'><o:p>&nbsp;</o:p></span></p>
+    <p class=MsoNormal style='tab-stops:-1.0in'><o:p>&nbsp;</o:p></p>
+    <p class=MsoNormal style='tab-stops:-1.0in'>Minimum Variance Brain Source
+    Localization for Short Data Sequences&#8221;, <i>IEEE Trans. Biomed. Eng.,</i>
+    Vol. 61 No. 2, Feb. 2014, pp. 535-546.</p>
+    <p class=MsoNormal style='tab-stops:-1.0in'><b style='mso-bidi-font-weight:
+    normal'>Maryam Ravan<span style='mso-bidi-font-weight:bold'>,</span><i> </i>James
+    P. Reilly, and Gary Hasey</b><o:p></o:p></p>
+    <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'><a
+    href="../abstract/abstract%20ffa.pdf"><strong>Abstract</strong></a><span
+    style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    </span><a href="../papers/2013%20journal/FFA-BSL%20Revised-4%20JR.pdf">download</a><o:p></o:p></span></p>
+    <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'><o:p>&nbsp;</o:p></span></p>
+    </td>
+    <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+    <p class=MsoNormal align=right style='text-align:right'><span
+    style='mso-fareast-font-family:"Times New Roman"'><a
+    href="../papers/2011_journals/Gunturkan.pdf" target="_blank"></a><o:p></o:p></span></p>
+    </td>
+    <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+    <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'><a
+    href="#top"></a><o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:5'>
+    <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+    <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'>Sizing
+    of 3-D arbitrary defects using magnetic flux leakage measurements <br>
+    <em>IEEE Trans. Magn, vol. 46, no. 4, April 2010, pp. 1024 - 1033, 2010</em>
+    <br>
+    <strong>Maryam Ravan, Reza K. Amineh, Slawomir Koziel, Natalia K. Nikolova,
+    and James P. Reilly </strong><br>
+    <a href="../abstract/Ravan_Amineh_Koziel.html"><strong>Abstract</strong></a><o:p></o:p></span></p>
+    </td>
+    <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+    <p class=MsoNormal align=right style='text-align:right'><!--[if gte vml 1]><v:shapetype
+     id="_x0000_t75" coordsize="21600,21600" o:spt="75" o:preferrelative="t"
+     path="m@4@5l@4@11@9@11@9@5xe" filled="f" stroked="f">
+     <v:stroke joinstyle="miter"/>
+     <v:formulas>
+      <v:f eqn="if lineDrawn pixelLineWidth 0"/>
+      <v:f eqn="sum @0 1 0"/>
+      <v:f eqn="sum 0 0 @1"/>
+      <v:f eqn="prod @2 1 2"/>
+      <v:f eqn="prod @3 21600 pixelWidth"/>
+      <v:f eqn="prod @3 21600 pixelHeight"/>
+      <v:f eqn="sum @0 0 1"/>
+      <v:f eqn="prod @6 1 2"/>
+      <v:f eqn="prod @7 21600 pixelWidth"/>
+      <v:f eqn="sum @8 21600 0"/>
+      <v:f eqn="prod @7 21600 pixelHeight"/>
+      <v:f eqn="sum @10 21600 0"/>
+     </v:formulas>
+     <v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect"/>
+     <o:lock v:ext="edit" aspectratio="t"/>
+    </v:shapetype><v:shape id="Picture_x0020_6" o:spid="_x0000_s1040" type="#_x0000_t75"
+     alt="display this document"
+     href="../papers/2011_journals/Ravan_Amineh_Koziel.pdf" target="&quot;_blank&quot;"
+     style='position:absolute;left:0;text-align:left;margin-left:-7.5pt;
+     margin-top:-14.25pt;width:24pt;height:22.5pt;z-index:251700224;
+     visibility:visible;mso-wrap-style:square;mso-width-percent:0;
+     mso-height-percent:0;mso-wrap-distance-left:0;mso-wrap-distance-top:0;
+     mso-wrap-distance-right:0;mso-wrap-distance-bottom:0;
+     mso-position-horizontal:absolute;mso-position-horizontal-relative:text;
+     mso-position-vertical:absolute;mso-position-vertical-relative:line;
+     mso-width-percent:0;mso-height-percent:0;mso-width-relative:page;
+     mso-height-relative:page' o:allowoverlap="f" o:button="t">
+     <v:imagedata src="../images/display.jpg"/>
+     <w:wrap type="square" anchory="line"/>
+    </v:shape><![endif]--><![if !vml]><a
+    href="../papers/2011_journals/Ravan_Amineh_Koziel.pdf" target="&quot;_blank&quot;"><img
+    border=0 width=32 height=30 src="../images/display.jpg" align=left
+    alt="display this document" title="" v:shapes="Picture_x0020_6"></a><![endif]><span
+    style='mso-fareast-font-family:"Times New Roman"'>&nbsp;<o:p></o:p></span></p>
+    </td>
+    <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+    <p class=MsoNormal><!--[if gte vml 1]><v:shape id="Picture_x0020_7" o:spid="_x0000_s1039"
+     type="#_x0000_t75" href="#top" style='position:absolute;margin-left:4.5pt;
+     margin-top:-16.35pt;width:12pt;height:20.25pt;z-index:251701248;
+     visibility:visible;mso-wrap-style:square;mso-width-percent:0;
+     mso-height-percent:0;mso-wrap-distance-left:0;mso-wrap-distance-top:0;
+     mso-wrap-distance-right:0;mso-wrap-distance-bottom:0;
+     mso-position-horizontal:absolute;mso-position-horizontal-relative:text;
+     mso-position-vertical:absolute;mso-position-vertical-relative:line;
+     mso-width-percent:0;mso-height-percent:0;mso-width-relative:page;
+     mso-height-relative:page' o:allowoverlap="f" o:button="t">
+     <v:imagedata src="../images/top_pos.gif"/>
+     <w:wrap type="square" anchory="line"/>
+    </v:shape><![endif]--><![if !vml]><a href="#top"><img border=0 width=16
+    height=27 src="../images/top_pos.gif" align=left title="" v:shapes="Picture_x0020_7"></a><![endif]><span
+    style='mso-fareast-font-family:"Times New Roman"'>&nbsp;<o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:6'>
+    <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+    <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'>&nbsp;<o:p></o:p></span></p>
+    </td>
+    <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+    <p class=MsoNormal align=right style='text-align:right'><span
+    style='mso-fareast-font-family:"Times New Roman"'><a
+    href="../papers/2011_journals/Ravan_Amineh_Koziel.pdf" target="_blank"></a><o:p></o:p></span></p>
+    </td>
+    <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+    <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'><a
+    href="#top"></a><o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:7'>
+    <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+    <p class=MsoNormal style='margin-left:.5in;text-indent:-.5in;tab-stops:
+    -1.0in'><span style='mso-fareast-font-family:"Times New Roman"'>A Machine
+    Learning Approach for Distinguishing Age of Infants Using Auditory Evoked
+    Potentials </span><i><span style='mso-spacerun:yes'>&nbsp;</span>Clinical
+    Neurophysiology, </i>Vol. 122, No. 11, Nov., 2011, pp. 2139-50.<span
+    style='mso-fareast-font-family:"Times New Roman"'><br>
+    <strong>M. Ravan, J. Reilly, L. Trainor and A. Khodayari-Rostamabad</strong>
+    <br>
+    <a href="../abstract/Ravan_Reilly_Trainor.html"><strong>Abstract</strong></a>
+    </span></p>
+    </td>
+    <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+    <p class=MsoNormal align=right style='text-align:right'><!--[if gte vml 1]><v:shape
+     id="Picture_x0020_8" o:spid="_x0000_s1038" type="#_x0000_t75" alt="display this document"
+     href="../papers/2011_journals/Ravan_Reilly_Trainor.pdf" target="&quot;_blank&quot;"
+     style='position:absolute;left:0;text-align:left;margin-left:-6pt;
+     margin-top:-14.4pt;width:24pt;height:22.5pt;z-index:251702272;
+     visibility:visible;mso-wrap-style:square;mso-width-percent:0;
+     mso-height-percent:0;mso-wrap-distance-left:0;mso-wrap-distance-top:0;
+     mso-wrap-distance-right:0;mso-wrap-distance-bottom:0;
+     mso-position-horizontal:absolute;mso-position-horizontal-relative:text;
+     mso-position-vertical:absolute;mso-position-vertical-relative:line;
+     mso-width-percent:0;mso-height-percent:0;mso-width-relative:page;
+     mso-height-relative:page' o:allowoverlap="f" o:button="t">
+     <v:imagedata src="../images/display.jpg"/>
+     <w:wrap type="square" anchory="line"/>
+    </v:shape><![endif]--><![if !vml]><a
+    href="../papers/2011_journals/Ravan_Reilly_Trainor.pdf" target="&quot;_blank&quot;"><img
+    border=0 width=32 height=30 src="../images/display.jpg" align=left
+    alt="display this document" title="" v:shapes="Picture_x0020_8"></a><![endif]><span
+    style='mso-fareast-font-family:"Times New Roman"'>&nbsp;<o:p></o:p></span></p>
+    </td>
+    <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+    <p class=MsoNormal><!--[if gte vml 1]><v:shape id="Picture_x0020_9" o:spid="_x0000_s1037"
+     type="#_x0000_t75" href="#top" style='position:absolute;margin-left:6.75pt;
+     margin-top:-19.65pt;width:12pt;height:20.25pt;z-index:251703296;
+     visibility:visible;mso-wrap-style:square;mso-width-percent:0;
+     mso-height-percent:0;mso-wrap-distance-left:0;mso-wrap-distance-top:0;
+     mso-wrap-distance-right:0;mso-wrap-distance-bottom:0;
+     mso-position-horizontal:absolute;mso-position-horizontal-relative:text;
+     mso-position-vertical:absolute;mso-position-vertical-relative:line;
+     mso-width-percent:0;mso-height-percent:0;mso-width-relative:page;
+     mso-height-relative:page' o:allowoverlap="f" o:button="t">
+     <v:imagedata src="../images/top_pos.gif"/>
+     <w:wrap type="square" anchory="line"/>
+    </v:shape><![endif]--><![if !vml]><a href="#top"><img border=0 width=16
+    height=27 src="../images/top_pos.gif" align=left title="" v:shapes="Picture_x0020_9"></a><![endif]><span
+    style='mso-fareast-font-family:"Times New Roman"'>&nbsp;<o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:8'>
+    <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+    <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'>&nbsp;<o:p></o:p></span></p>
+    </td>
+    <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+    <p class=MsoNormal align=right style='text-align:right'><span
+    style='mso-fareast-font-family:"Times New Roman"'><a
+    href="../papers/2011_journals/Ravan_Reilly_Trainor.pdf" target="_blank"></a><o:p></o:p></span></p>
+    </td>
+    <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+    <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'><a
+    href="#top"></a><o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:9'>
+    <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+    <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'>Mean
+    Square Error in Periodogram Approaches with Adaptive Windowing <br>
+    <em>IEEE Trans. Signal Processing, Vol. 59, No. 3, March, 2011. </em><br>
+    <strong>S. Beheshti, M. Ravan, J. Reilly and L. Trainor</strong> <br>
+    <a href="../abstract/S_Beheshti.html"><strong>Abstract</strong></a><o:p></o:p></span></p>
+    </td>
+    <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+    <p class=MsoNormal align=right style='text-align:right'><!--[if gte vml 1]><v:shape
+     id="Picture_x0020_10" o:spid="_x0000_s1036" type="#_x0000_t75" alt="display this document"
+     href="../papers/2011_journals/S_Beheshti.pdf" target="&quot;_blank&quot;"
+     style='position:absolute;left:0;text-align:left;margin-left:-6.75pt;
+     margin-top:-24.7pt;width:24pt;height:22.5pt;z-index:251704320;
+     visibility:visible;mso-wrap-style:square;mso-width-percent:0;
+     mso-height-percent:0;mso-wrap-distance-left:0;mso-wrap-distance-top:0;
+     mso-wrap-distance-right:0;mso-wrap-distance-bottom:0;
+     mso-position-horizontal:absolute;mso-position-horizontal-relative:text;
+     mso-position-vertical:absolute;mso-position-vertical-relative:line;
+     mso-width-percent:0;mso-height-percent:0;mso-width-relative:page;
+     mso-height-relative:page' o:allowoverlap="f" o:button="t">
+     <v:imagedata src="../images/display.jpg"/>
+     <w:wrap type="square" anchory="line"/>
+    </v:shape><![endif]--><![if !vml]><a
+    href="../papers/2011_journals/S_Beheshti.pdf" target="&quot;_blank&quot;"><img
+    border=0 width=32 height=30 src="../images/display.jpg" align=left
+    alt="display this document" title="" v:shapes="Picture_x0020_10"></a><![endif]><span
+    style='mso-fareast-font-family:"Times New Roman"'>&nbsp;<o:p></o:p></span></p>
+    </td>
+    <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+    <p class=MsoNormal><!--[if gte vml 1]><v:shape id="Picture_x0020_11"
+     o:spid="_x0000_s1035" type="#_x0000_t75" href="#top" style='position:absolute;
+     margin-left:0;margin-top:-13.45pt;width:12pt;height:20.25pt;z-index:251705344;
+     visibility:visible;mso-wrap-style:square;mso-width-percent:0;
+     mso-height-percent:0;mso-wrap-distance-left:0;mso-wrap-distance-top:0;
+     mso-wrap-distance-right:0;mso-wrap-distance-bottom:0;
+     mso-position-horizontal:absolute;mso-position-horizontal-relative:text;
+     mso-position-vertical:absolute;mso-position-vertical-relative:line;
+     mso-width-percent:0;mso-height-percent:0;mso-width-relative:page;
+     mso-height-relative:page' o:allowoverlap="f" o:button="t">
+     <v:imagedata src="../images/top_pos.gif"/>
+     <w:wrap type="square" anchory="line"/>
+    </v:shape><![endif]--><![if !vml]><a href="#top"><img border=0 width=16
+    height=27 src="../images/top_pos.gif" align=left title="" v:shapes="Picture_x0020_11"></a><![endif]><span
+    style='mso-fareast-font-family:"Times New Roman"'>&nbsp;<o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:10'>
+    <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+    <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'>&nbsp;<o:p></o:p></span></p>
+    </td>
+    <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+    <p class=MsoNormal align=right style='text-align:right'><span
+    style='mso-fareast-font-family:"Times New Roman"'><a
+    href="../papers/2011_journals/S_Beheshti.pdf" target="_blank"></a><o:p></o:p></span></p>
+    </td>
+    <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+    <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'><a
+    href="#top"></a><o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:11'>
+    <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+    <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'>Machine
+    Learning Methodologies Using Pre-Treatment Electroencephalography Can
+    Predict The Symptomatic Response To Clozapine Therapy <br>
+    <em>Clinical Neurophysiology, Vol. 121, Issue 12, Dec. 2010</em><br>
+    <strong>Ahmad Khodayari-Rostamabad, Gary M. Hasey, Duncan J. MacCrimmon,
+    James P. Reilly and Hubert de Bruin</strong> <br>
+    <a href="../abstract/Ahmad_Khodayari.html"><strong>Abstract</strong></a><o:p></o:p></span></p>
+    </td>
+    <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+    <p class=MsoNormal align=right style='text-align:right'><!--[if gte vml 1]><v:shape
+     id="Picture_x0020_12" o:spid="_x0000_s1034" type="#_x0000_t75" alt="display this document"
+     href="../papers/2011_journals/Ahmad_Khodayari.pdf" target="&quot;_blank&quot;"
+     style='position:absolute;left:0;text-align:left;margin-left:6pt;
+     margin-top:-21.4pt;width:24pt;height:22.5pt;z-index:251706368;
+     visibility:visible;mso-wrap-style:square;mso-width-percent:0;
+     mso-height-percent:0;mso-wrap-distance-left:0;mso-wrap-distance-top:0;
+     mso-wrap-distance-right:0;mso-wrap-distance-bottom:0;
+     mso-position-horizontal:absolute;mso-position-horizontal-relative:text;
+     mso-position-vertical:absolute;mso-position-vertical-relative:line;
+     mso-width-percent:0;mso-height-percent:0;mso-width-relative:page;
+     mso-height-relative:page' o:allowoverlap="f" o:button="t">
+     <v:imagedata src="../images/display.jpg"/>
+     <w:wrap type="square" anchory="line"/>
+    </v:shape><![endif]--><![if !vml]><a
+    href="../papers/2011_journals/Ahmad_Khodayari.pdf" target="&quot;_blank&quot;"><img
+    border=0 width=32 height=30 src="../images/display.jpg" align=left
+    alt="display this document" title="" v:shapes="Picture_x0020_12"></a><![endif]><span
+    style='mso-fareast-font-family:"Times New Roman"'>&nbsp;<o:p></o:p></span></p>
+    </td>
+    <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+    <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'>&nbsp;<o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:12'>
+    <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+    <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'>&nbsp;<o:p></o:p></span></p>
+    </td>
+    <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+    <p class=MsoNormal align=right style='text-align:right'><span
+    style='mso-fareast-font-family:"Times New Roman"'><a
+    href="../papers/2011_journals/Ahmad_Khodayari.pdf" target="_blank"></a><o:p></o:p></span></p>
+    </td>
+    <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+    <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'><a
+    href="#top"></a><o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:13'>
+    <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+    <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'>Minimizing
+    Nonconvex Functions for Sparse Vector Reconstruction <br>
+    <em>IEEE Trans. Signal Processing, Vol. 58, No. 7, July 2010 </em><br>
+    <strong>N. Mourad and J. Reilly </strong><br>
+    <a href="../abstract/N_Mourad_J_Reilly.html"><strong>Abstract</strong></a><o:p></o:p></span></p>
+    </td>
+    <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+    <p class=MsoNormal align=right style='text-align:right'><!--[if gte vml 1]><v:shape
+     id="Picture_x0020_14" o:spid="_x0000_s1033" type="#_x0000_t75" alt="display this document"
+     href="../papers/2011_journals/N_Mourad_J_Reilly.pdf" target="&quot;_blank&quot;"
+     style='position:absolute;left:0;text-align:left;margin-left:3.75pt;
+     margin-top:13pt;width:24pt;height:22.5pt;z-index:251708416;visibility:visible;
+     mso-wrap-style:square;mso-width-percent:0;mso-height-percent:0;
+     mso-wrap-distance-left:0;mso-wrap-distance-top:0;
+     mso-wrap-distance-right:0;mso-wrap-distance-bottom:0;
+     mso-position-horizontal:absolute;mso-position-horizontal-relative:text;
+     mso-position-vertical:absolute;mso-position-vertical-relative:line;
+     mso-width-percent:0;mso-height-percent:0;mso-width-relative:page;
+     mso-height-relative:page' o:allowoverlap="f" o:button="t">
+     <v:imagedata src="../images/display.jpg"/>
+     <w:wrap type="square" anchory="line"/>
+    </v:shape><![endif]--><![if !vml]><a
+    href="../papers/2011_journals/N_Mourad_J_Reilly.pdf" target="&quot;_blank&quot;"><img
+    border=0 width=32 height=30 src="../images/display.jpg" align=left
+    alt="display this document" title="" v:shapes="Picture_x0020_14"></a><![endif]><span
+    style='mso-fareast-font-family:"Times New Roman"'>&nbsp;<o:p></o:p></span></p>
+    </td>
+    <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+    <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'>&nbsp;<o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:14'>
+    <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+    <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'>&nbsp;<o:p></o:p></span></p>
+    </td>
+    <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+    <p class=MsoNormal align=right style='text-align:right'><span
+    style='mso-fareast-font-family:"Times New Roman"'><a
+    href="../papers/2011_journals/N_Mourad_J_Reilly.pdf" target="_blank"></a><o:p></o:p></span></p>
+    </td>
+    <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+    <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'><a
+    href="#top"></a><o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:15'>
+    <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+    <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'>Sizing
+    of Multiple Cracks Using Magnetic Flux Leakage Measurements<br>
+    <em>IET Science, Measurement &amp; Technology, vol. 4, no. 1, 2010</em> <br>
+    <strong>M. Ravan, R.K. Amineh, S. Kozeil, N.K. Nikolova and J.P. Reilly</strong>
+    <br>
+    <a href="../abstract/Ravan_Amineh_IET.html"><strong>Abstract</strong></a><o:p></o:p></span></p>
+    </td>
+    <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+    <p class=MsoNormal align=right style='text-align:right'><!--[if gte vml 1]><v:shape
+     id="Picture_x0020_16" o:spid="_x0000_s1032" type="#_x0000_t75" alt="display this document"
+     href="../papers/2011_journals/Ravan_Amineh_IET.pdf" target="&quot;_blank&quot;"
+     style='position:absolute;left:0;text-align:left;margin-left:6pt;
+     margin-top:1.2pt;width:24pt;height:22.5pt;z-index:251710464;visibility:visible;
+     mso-wrap-style:square;mso-width-percent:0;mso-height-percent:0;
+     mso-wrap-distance-left:0;mso-wrap-distance-top:0;
+     mso-wrap-distance-right:0;mso-wrap-distance-bottom:0;
+     mso-position-horizontal:absolute;mso-position-horizontal-relative:text;
+     mso-position-vertical:absolute;mso-position-vertical-relative:line;
+     mso-width-percent:0;mso-height-percent:0;mso-width-relative:page;
+     mso-height-relative:page' o:allowoverlap="f" o:button="t">
+     <v:imagedata src="../images/display.jpg"/>
+     <w:wrap type="square" anchory="line"/>
+    </v:shape><![endif]--><![if !vml]><a
+    href="../papers/2011_journals/Ravan_Amineh_IET.pdf" target="&quot;_blank&quot;"><img
+    border=0 width=32 height=30 src="../images/display.jpg" align=left
+    alt="display this document" title="" v:shapes="Picture_x0020_16"></a><![endif]><span
+    style='mso-fareast-font-family:"Times New Roman"'>&nbsp;<o:p></o:p></span></p>
+    </td>
+    <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+    <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'>&nbsp;<o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:16'>
+    <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+    <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'>&nbsp;<o:p></o:p></span></p>
+    </td>
+    <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+    <p class=MsoNormal align=right style='text-align:right'><span
+    style='mso-fareast-font-family:"Times New Roman"'><a
+    href="../papers/2011_journals/Ravan_Amineh_IET.pdf" target="_blank"></a><o:p></o:p></span></p>
+    </td>
+    <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+    <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'><a
+    href="#top"></a><o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:17'>
+    <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+    <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'>A
+    Space Mapping Methodology for Defect Characterization from Magnetic Flux
+    Leakage Measurements <br>
+    <em>IEEE Trans. Magnetics, Vol. 44, No. 8, Aug. 2008</em> <br>
+    <strong>R. K. Amineh , S. Koziel , N. K. Nikolova , J. W. Bandler , and J.
+    P. Reilly</strong> <br>
+    <a href="../abstract/Amineh_Koziel.html"><strong>Abstract</strong></a><o:p></o:p></span></p>
+    </td>
+    <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+    <p class=MsoNormal align=right style='text-align:right'><!--[if gte vml 1]><v:shape
+     id="Picture_x0020_18" o:spid="_x0000_s1031" type="#_x0000_t75" alt="display this document"
+     href="../papers/2011_journals/RevisedManuscript-TMAG-07-11-04.pdf"
+     target="&quot;_blank&quot;" style='position:absolute;left:0;text-align:left;
+     margin-left:6pt;margin-top:-14.05pt;width:24pt;height:22.5pt;z-index:251712512;
+     visibility:visible;mso-wrap-style:square;mso-width-percent:0;
+     mso-height-percent:0;mso-wrap-distance-left:0;mso-wrap-distance-top:0;
+     mso-wrap-distance-right:0;mso-wrap-distance-bottom:0;
+     mso-position-horizontal:absolute;mso-position-horizontal-relative:text;
+     mso-position-vertical:absolute;mso-position-vertical-relative:line;
+     mso-width-percent:0;mso-height-percent:0;mso-width-relative:page;
+     mso-height-relative:page' o:allowoverlap="f" o:button="t">
+     <v:imagedata src="../images/display.jpg"/>
+     <w:wrap type="square" anchory="line"/>
+    </v:shape><![endif]--><![if !vml]><a
+    href="../papers/2011_journals/RevisedManuscript-TMAG-07-11-04.pdf"
+    target="&quot;_blank&quot;"><img border=0 width=32 height=30
+    src="../images/display.jpg" align=left alt="display this document" title=""
+    v:shapes="Picture_x0020_18"></a><![endif]><span style='mso-fareast-font-family:
+    "Times New Roman"'>&nbsp;<o:p></o:p></span></p>
+    </td>
+    <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+    <p class=MsoNormal><!--[if gte vml 1]><v:shape id="Picture_x0020_19"
+     o:spid="_x0000_s1030" type="#_x0000_t75" href="#top" style='position:absolute;
+     margin-left:0;margin-top:5.25pt;width:12pt;height:20.25pt;z-index:251713536;
+     visibility:visible;mso-wrap-style:square;mso-width-percent:0;
+     mso-height-percent:0;mso-wrap-distance-left:0;mso-wrap-distance-top:0;
+     mso-wrap-distance-right:0;mso-wrap-distance-bottom:0;
+     mso-position-horizontal:absolute;mso-position-horizontal-relative:text;
+     mso-position-vertical:absolute;mso-position-vertical-relative:line;
+     mso-width-percent:0;mso-height-percent:0;mso-width-relative:page;
+     mso-height-relative:page' o:allowoverlap="f" o:button="t">
+     <v:imagedata src="../images/top_pos.gif"/>
+     <w:wrap type="square" anchory="line"/>
+    </v:shape><![endif]--><![if !vml]><a href="#top"><img border=0 width=16
+    height=27 src="../images/top_pos.gif" align=left title="" v:shapes="Picture_x0020_19"></a><![endif]><span
+    style='mso-fareast-font-family:"Times New Roman"'>&nbsp;<o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:18'>
+    <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+    <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'>&nbsp;<o:p></o:p></span></p>
+    </td>
+    <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+    <p class=MsoNormal align=right style='text-align:right'><span
+    style='mso-fareast-font-family:"Times New Roman"'><a
+    href="../papers/2011_journals/RevisedManuscript-TMAG-07-11-04.pdf"
+    target="_blank"></a><o:p></o:p></span></p>
+    </td>
+    <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+    <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'><a
+    href="#top"></a><o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:19'>
+    <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+    <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'>Machine
+    Learning Techniques for the Analysis of Magnetic Flux Leakage Images in
+    Pipeline Inspection <br>
+    <em>IEEE Transactions on Magnetics, 2009.</em> <br>
+    <strong>Ahmad Khodayari-Rostamabad, J.P. Reilly, N.K. Nikolova, J.R. Hare,
+    and Sabir Pasha</strong> <br>
+    <a href="../abstract/khodayari.html"><strong>Abstract</strong></a> <o:p></o:p></span></p>
+    </td>
+    <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+    <p class=MsoNormal align=right style='text-align:right'><!--[if gte vml 1]><v:shape
+     id="Picture_x0020_20" o:spid="_x0000_s1029" type="#_x0000_t75" alt="display this document"
+     href="../papers/2009_updates/khodayari.pdf" target="&quot;_blank&quot;"
+     style='position:absolute;left:0;text-align:left;margin-left:5.25pt;
+     margin-top:-11.7pt;width:24pt;height:22.5pt;z-index:251714560;
+     visibility:visible;mso-wrap-style:square;mso-width-percent:0;
+     mso-height-percent:0;mso-wrap-distance-left:0;mso-wrap-distance-top:0;
+     mso-wrap-distance-right:0;mso-wrap-distance-bottom:0;
+     mso-position-horizontal:absolute;mso-position-horizontal-relative:text;
+     mso-position-vertical:absolute;mso-position-vertical-relative:line;
+     mso-width-percent:0;mso-height-percent:0;mso-width-relative:page;
+     mso-height-relative:page' o:allowoverlap="f" o:button="t">
+     <v:imagedata src="../images/display.jpg"/>
+     <w:wrap type="square" anchory="line"/>
+    </v:shape><![endif]--><![if !vml]><a
+    href="../papers/2009_updates/khodayari.pdf" target="&quot;_blank&quot;"><img
+    border=0 width=32 height=30 src="../images/display.jpg" align=left
+    alt="display this document" title="" v:shapes="Picture_x0020_20"></a><![endif]><span
+    style='mso-fareast-font-family:"Times New Roman"'>&nbsp;<o:p></o:p></span></p>
+    </td>
+    <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+    <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'>&nbsp;<o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:20'>
+    <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+    <p class=MsoNormal><a name=khodayari id=khodayari></a><span
+    style='mso-fareast-font-family:"Times New Roman"'>&nbsp;<o:p></o:p></span></p>
+    </td>
+    <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+    <p class=MsoNormal align=right style='text-align:right'><span
+    style='mso-fareast-font-family:"Times New Roman"'><a
+    href="../papers/2009_updates/khodayari.pdf" target="_blank"></a><o:p></o:p></span></p>
+    </td>
+    <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+    <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'><a
+    href="#top"></a><o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:21'>
+    <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+    <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'>Approximate
+    Conditional Mean Particle Filtering for Linear/Nonlinear Dynamic State
+    Space Models <br>
+    <em>IEEE Transactions on Signal Processing, Vol. 58, No.12, December 2008.</em>
+    <br>
+    <strong>Derek Yee, J.P. Reilly, T. Kirubarajan, and K. Punithakumar</strong>
+    <br>
+    <a href="../abstract/TSP_06733-2008.html"><strong>Abstract</strong></a> <o:p></o:p></span></p>
+    </td>
+    <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+    <p class=MsoNormal align=right style='text-align:right'><a
+    href="../papers/2009_updates/corrected_paper_TSP_06733-2008.R1_May28.pdf"
+    target="_blank"><span style='mso-fareast-font-family:"Times New Roman";
+    mso-no-proof:yes;text-decoration:none;text-underline:none'><img border=0
+    width=32 height=30 id="_x0000_i1036" src="../images/display.jpg"
+    alt="display this document"></span></a><span style='mso-fareast-font-family:
+    "Times New Roman"'>&nbsp;<o:p></o:p></span></p>
+    </td>
+    <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+    <p class=MsoNormal><!--[if gte vml 1]><v:shape id="Picture_x0020_22"
+     o:spid="_x0000_s1028" type="#_x0000_t75" href="#top" style='position:absolute;
+     margin-left:12pt;margin-top:4.2pt;width:12pt;height:20.25pt;z-index:251716608;
+     visibility:visible;mso-wrap-style:square;mso-width-percent:0;
+     mso-height-percent:0;mso-wrap-distance-left:0;mso-wrap-distance-top:0;
+     mso-wrap-distance-right:0;mso-wrap-distance-bottom:0;
+     mso-position-horizontal:absolute;mso-position-horizontal-relative:text;
+     mso-position-vertical:absolute;mso-position-vertical-relative:line;
+     mso-width-percent:0;mso-height-percent:0;mso-width-relative:page;
+     mso-height-relative:page' o:allowoverlap="f" o:button="t">
+     <v:imagedata src="../images/top_pos.gif"/>
+     <w:wrap type="square" anchory="line"/>
+    </v:shape><![endif]--><![if !vml]><a href="#top"><img border=0 width=16
+    height=27 src="../images/top_pos.gif" align=left title="" v:shapes="Picture_x0020_22"></a><![endif]><span
+    style='mso-fareast-font-family:"Times New Roman"'>&nbsp;<o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:22'>
+    <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+    <p class=MsoNormal><a name="TSP_06733-2008" id="TSP_06733-2008"></a><span
+    style='mso-fareast-font-family:"Times New Roman"'>&nbsp;<o:p></o:p></span></p>
+    </td>
+    <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'></td>
+    <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+    <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'><a
+    href="#top"></a><o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:23'>
+    <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+    <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'>Characterization
+    of Surface Breaking Cracks Using One Tangential Component of Magnetic<span
+    style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+    style='mso-spacerun:yes'>&nbsp;</span><o:p></o:p></span></p>
+    <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'>Leakage
+    Field <em>IEEE Transactions on Magnetics, Vol. 44, No.4, April 2008.</em> <span
+    style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span
+    style='mso-spacerun:yes'>&nbsp;</span><o:p></o:p></span></p>
+    <p class=MsoNormal><strong><span style='mso-fareast-font-family:"Times New Roman"'>R.K.
+    Amineh, N.K. Nikolova, J.P. Reilly, and J.R. Hare</span></strong><span
+    style='mso-fareast-font-family:"Times New Roman"'> <span
+    style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span
+    style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><br>
+    <a href="../abstract/MFLdirect_Amineh.html"><strong>Abstract</strong></a> <span
+    style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><a
+    href="../papers/2009_updates/MFLdirect_Amineh.pdf">download</a><o:p></o:p></span></p>
+    </td>
+    <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+    <p class=MsoNormal align=right style='text-align:right'><span
+    style='mso-fareast-font-family:"Times New Roman"'>&nbsp;<o:p></o:p></span></p>
+    </td>
+    <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+    <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'>&nbsp;<o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:24'>
+    <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+    <p class=MsoNormal><a name="MFLdirect_Amineh" id="MFLdirect_Amineh"></a><span
+    style='mso-fareast-font-family:"Times New Roman"'>&nbsp;<o:p></o:p></span></p>
+    </td>
+    <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'></td>
+    <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'></td>
+   </tr>
+   <tr style='mso-yfti-irow:25'>
+    <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+    <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'>An
+    EM Algorithm for Nonlinear State Estimation with Model Uncertainties <br>
+    <em>IEEE Transactions on Signal Processing, Vol. 56, No.3, March 2008.</em>
+    <br>
+    <strong>Amin Zia, T. Kirubarajan, J.P. Reilly, Derek Yee, K. Punithakumar,
+    and S. Shirani</strong> <br>
+    <a href="../abstract/aes04.html"><strong>Abstract</strong></a><o:p></o:p></span></p>
+    </td>
+    <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+    <p class=MsoNormal align=right style='text-align:right'><a
+    href="../papers/2009_updates/aes04.pdf" target="_blank"><span
+    style='mso-fareast-font-family:"Times New Roman";mso-no-proof:yes;
+    text-decoration:none;text-underline:none'><img border=0 width=32 height=30
+    id="_x0000_i1035" src="../images/display.jpg" alt="display this document"></span></a><span
+    style='mso-fareast-font-family:"Times New Roman"'>&nbsp;<o:p></o:p></span></p>
+    </td>
+    <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+    <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'>&nbsp;<o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:26'>
+    <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+    <p class=MsoNormal><a name=aes04 id=aes04></a><span style='mso-fareast-font-family:
+    "Times New Roman"'>&nbsp;<o:p></o:p></span></p>
+    </td>
+    <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'></td>
+    <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'></td>
+   </tr>
+   <tr style='mso-yfti-irow:27'>
+    <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+    <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'>A
+    Blind Sequential Monte Carlo Receiver for OFDM Systems in the Presence of
+    Phase Noise, Multipath fading, and Channel Order Uncertainty <br>
+    <em>IEEE Transactions on Signal Processing, Vol. 55, No.9, September 2007.</em>
+    <br>
+    <strong>Derek Yee, J.P. Reilly, and T. Kirubarajan</strong> <br>
+    <a href="../abstract/Dec15_OFDM_Paper.html"><strong>Abstract</strong></a> <o:p></o:p></span></p>
+    </td>
+    <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+    <p class=MsoNormal align=right style='text-align:right'><a
+    href="../papers/2009_updates/Dec15_OFDM_Paper.pdf" target="_blank"><span
+    style='mso-fareast-font-family:"Times New Roman";mso-no-proof:yes;
+    text-decoration:none;text-underline:none'><img border=0 width=32 height=30
+    id="_x0000_i1034" src="../images/display.jpg" alt="display this document"></span></a><span
+    style='mso-fareast-font-family:"Times New Roman"'>&nbsp;<o:p></o:p></span></p>
+    </td>
+    <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+    <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'>&nbsp;<o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:28'>
+    <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+    <p class=MsoNormal><a name="Dec15_OFDM_Paper" id="Dec15_OFDM_Paper"></a><span
+    style='mso-fareast-font-family:"Times New Roman"'>&nbsp;<o:p></o:p></span></p>
+    </td>
+    <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'></td>
+    <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+    <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'><a
+    href="#top"></a><o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:29'>
+    <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+    <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'>An
+    Information Geometric Approach to ML Estimation With Incomplete Data:
+    Application to Semi-Blind MIMO Channel <br>
+    <em>IEEE Transactions on Signal Processing, Vol. 55, No.8, August 2007.</em>
+    <br>
+    <strong>Amin Zia, J.P. Reilly, Jonathan Manton, and Shahram Shirani</strong>
+    <br>
+    <a href="../abstract/IGID-R2.html"><strong>Abstract</strong></a> <o:p></o:p></span></p>
+    </td>
+    <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+    <p class=MsoNormal align=right style='text-align:right'><a
+    href="../papers/2009_updates/igid-r2.pdf" target="_blank"><span
+    style='mso-fareast-font-family:"Times New Roman";mso-no-proof:yes;
+    text-decoration:none;text-underline:none'><img border=0 width=32 height=30
+    id="_x0000_i1033" src="../images/display.jpg" alt="display this document"></span></a><span
+    style='mso-fareast-font-family:"Times New Roman"'>&nbsp;<o:p></o:p></span></p>
+    </td>
+    <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+    <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'>&nbsp;<o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:30'>
+    <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+    <p class=MsoNormal><a name=IGID-R2 id=IGID-R2></a><span style='mso-fareast-font-family:
+    "Times New Roman"'>&nbsp;<o:p></o:p></span></p>
+    </td>
+    <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+    <p class=MsoNormal align=right style='text-align:right'><!--[if gte vml 1]><v:shape
+     id="Picture_x0020_27" o:spid="_x0000_s1027" type="#_x0000_t75"
+     href="#top" style='position:absolute;left:0;text-align:left;margin-left:8.25pt;
+     margin-top:-.7pt;width:12pt;height:20.25pt;z-index:251721728;visibility:visible;
+     mso-wrap-style:square;mso-width-percent:0;mso-height-percent:0;
+     mso-wrap-distance-left:0;mso-wrap-distance-top:0;
+     mso-wrap-distance-right:0;mso-wrap-distance-bottom:0;
+     mso-position-horizontal:absolute;mso-position-horizontal-relative:text;
+     mso-position-vertical:absolute;mso-position-vertical-relative:line;
+     mso-width-percent:0;mso-height-percent:0;mso-width-relative:page;
+     mso-height-relative:page' o:allowoverlap="f" o:button="t">
+     <v:imagedata src="../images/top_pos.gif"/>
+     <w:wrap type="square" anchory="line"/>
+    </v:shape><![endif]--><![if !vml]><a href="#top"><img border=0 width=16
+    height=27 src="../images/top_pos.gif" align=left title="" v:shapes="Picture_x0020_27"></a><![endif]><span
+    style='mso-fareast-font-family:"Times New Roman"'><o:p></o:p></span></p>
+    </td>
+    <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+    <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'><a
+    href="#top"></a><o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:31'>
+    <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+    <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'>A
+    Frequency Domain Method for Blind Source Separation of Convolutive Audio
+    Mixtures<em>IEEE Transactions on Speech and Audio Processing, Vol. 13,
+    No.5, September 2005.</em> <br>
+    <strong>Kamran Rahbar, J.P. Reilly and Jonathan H. Manton</strong><br>
+    <a href="../abstract/assp_01_revised.html"><strong>Abstract</strong></a> <o:p></o:p></span></p>
+    </td>
+    <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+    <p class=MsoNormal align=right style='text-align:right'><a
+    href="../papers/kamran/assp_02_daft8.pdf" target="_blank"><span
+    style='mso-fareast-font-family:"Times New Roman";mso-no-proof:yes;
+    text-decoration:none;text-underline:none'><img border=0 width=32 height=30
+    id="_x0000_i1032" src="../images/display.jpg" alt="display this document"></span></a><span
+    style='mso-fareast-font-family:"Times New Roman"'>&nbsp;<o:p></o:p></span></p>
+    </td>
+    <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+    <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'>&nbsp;<o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:32'>
+    <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+    <p class=MsoNormal><a name="assp_01_revised" id="assp_01_revised"></a><span
+    style='mso-fareast-font-family:"Times New Roman"'>&nbsp;<o:p></o:p></span></p>
+    </td>
+    <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'></td>
+    <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+    <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'><a
+    href="#top"></a><o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:33'>
+    <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+    <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'>Efficient
+    Design of Oversampled NPR GDFT filterbanks <br>
+    <em>IEEE Transactions on Signal Processing, Vol. 52, July 2004.</em><br>
+    <strong>Matthew R. Wilbur, Timothy N. Davidson, J.P. Reilly</strong> <br>
+    <a href="../abstract/matt_GDFT.html"><strong>Abstract</strong></a> <br>
+    <br>
+    Matlab code and a related application of this research in a Filtered
+    Multitone Modulation (FMT) scheme are available at Dr. Davidson's site: <br>
+    <a href="http://www.ece.mcmaster.ca/%7Edavidson/pubs/matt.html">http://www.ece.mcmaster.ca/~davidson/pubs/matt.html</a>
+    <o:p></o:p></span></p>
+    </td>
+    <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+    <p class=MsoNormal align=right style='text-align:right'><a
+    href="../papers/matt/Wilbur_FilterDesign.pdf" target="_blank"><span
+    style='mso-fareast-font-family:"Times New Roman";mso-no-proof:yes;
+    text-decoration:none;text-underline:none'><img border=0 width=32 height=30
+    id="_x0000_i1031" src="../images/display.jpg" alt="display this document"></span></a><span
+    style='mso-fareast-font-family:"Times New Roman"'>&nbsp;<o:p></o:p></span></p>
+    </td>
+    <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+    <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'>&nbsp;<o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:34'>
+    <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+    <p class=MsoNormal><a name="matt_GDFT" id="matt_GDFT"></a><span
+    style='mso-fareast-font-family:"Times New Roman"'>&nbsp;<o:p></o:p></span></p>
+    </td>
+    <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'></td>
+    <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+    <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'><a
+    href="#top"></a><o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:35'>
+    <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+    <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'>Wideband
+    Array Signal Processing Using MCMC Methods <br>
+    To appear <em>IEEE Transactions on Signal Processing</em><br>
+    <strong>William Ng, J.P. Reilly, T. Kirubarajan, and J.-R. Larocque </strong><br>
+    <a href="../abstract/william_2003.html"><strong>Abstract</strong></a> <br>
+    Also available are: <br>
+    &quot;<a href="../papers/william/impsamp.pdf" target="_blank">The
+    derivation of the second-order Bayesian Importance function for wideband
+    array signal</a>&quot;,<br>
+    &quot;<a href="../papers/william/pcrb.pdf" target="_blank">The derivation
+    of the PCRB for wideband array signal</a>&quot;, and <br>
+    &quot;<a href="../papers/william/crlb.pdf" target="_blank">The derivation
+    of the theoretical CRLB for array signal processing for wideband signal</a>&quot;.<o:p></o:p></span></p>
+    </td>
+    <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+    <p class=MsoNormal align=right style='text-align:right'><a
+    href="../papers/william/wideband_dbf.pdf" target="_blank"><span
+    style='mso-fareast-font-family:"Times New Roman";mso-no-proof:yes;
+    text-decoration:none;text-underline:none'><img border=0 width=32 height=30
+    id="_x0000_i1030" src="../images/display.jpg" alt="display this document"></span></a><span
+    style='mso-fareast-font-family:"Times New Roman"'>&nbsp;<o:p></o:p></span></p>
+    </td>
+    <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+    <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'>&nbsp;<o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:36'>
+    <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+    <p class=MsoNormal><a name="william_2003"></a><span style='mso-fareast-font-family:
+    "Times New Roman"'>&nbsp;<o:p></o:p></span></p>
+    </td>
+    <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'></td>
+    <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+    <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'><a
+    href="#top"></a><o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:37'>
+    <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+    <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'>A
+    New Frequency Domain Method for Blind Source Separation of Convolutive
+    Audio Mixtures <br>
+    To appear <em>IEEE Transactions on Speech and Audio Processing</em><br>
+    <strong>Kamran Rahbar and J.P. Reilly</strong> <br>
+    <a href="../abstract/kamran_2003.html"><strong>Abstract</strong></a> <br>
+    Matlab code implementing the blind source separation algorithm on data
+    collected in a reverberant room is available on request by emailing Prof.
+    Reilly: reillyj@mcmaster.ca<o:p></o:p></span></p>
+    </td>
+    <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+    <p class=MsoNormal align=right style='text-align:right'><a
+    href="../../assp_02_daft8.pdf"><span style='mso-fareast-font-family:"Times New Roman";
+    mso-no-proof:yes;text-decoration:none;text-underline:none'><img border=0
+    width=32 height=30 id="_x0000_i1029" src="../images/display.jpg"
+    alt="display this document"></span></a><span style='mso-fareast-font-family:
+    "Times New Roman"'>&nbsp;<o:p></o:p></span></p>
+    </td>
+    <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+    <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'>&nbsp;<o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:38'>
+    <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+    <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'>&nbsp;<o:p></o:p></span></p>
+    </td>
+    <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'></td>
+    <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+    <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'><a
+    href="#top"></a></span><!--[if gte vml 1]><v:shape id="Picture_x0020_30"
+     o:spid="_x0000_s1026" type="#_x0000_t75" href="#top" style='position:absolute;
+     margin-left:-39.2pt;margin-top:0;width:12pt;height:20.25pt;z-index:251724800;
+     visibility:visible;mso-wrap-style:square;mso-width-percent:0;
+     mso-height-percent:0;mso-wrap-distance-left:0;mso-wrap-distance-top:0;
+     mso-wrap-distance-right:0;mso-wrap-distance-bottom:0;
+     mso-position-horizontal:right;mso-position-horizontal-relative:text;
+     mso-position-vertical:absolute;mso-position-vertical-relative:line;
+     mso-width-percent:0;mso-height-percent:0;mso-width-relative:page;
+     mso-height-relative:page' o:allowoverlap="f" o:button="t">
+     <v:imagedata src="../images/top_pos.gif"/>
+     <w:wrap type="square" anchory="line"/>
+    </v:shape><![endif]--><![if !vml]><a href="#top"><img border=0 width=16
+    height=27 src="../images/top_pos.gif" align=right title="" v:shapes="Picture_x0020_30"></a><![endif]><span
+    style='mso-no-proof:yes'><a href="#top"></a></span><span style='mso-fareast-font-family:
+    "Times New Roman"'><o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:39'>
+    <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+    <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'>Particle
+    Filters for Joint Detection, Estimation and Tracking of an Unknown Number
+    of Directions of Arrival <br>
+    <em>IEEE Transactions on Signal Processing</em>, Vol. 50, No. 12, Dec.,
+    2002 pp. 2926-2937.<br>
+    <strong>J.-R. Larocque, J.P. Reilly, and William Ng</strong> <br>
+    <a href="../abstract/jr_william_sig_proc_trans_2002.html"><strong>Abstract</strong></a>
+    <o:p></o:p></span></p>
+    </td>
+    <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+    <p class=MsoNormal align=right style='text-align:right'><a
+    href="../papers/jr/part.pdf" target="_blank"><span style='mso-fareast-font-family:
+    "Times New Roman";mso-no-proof:yes;text-decoration:none;text-underline:
+    none'><img border=0 width=32 height=30 id="_x0000_i1028"
+    src="../images/display.jpg" alt="display this document"></span></a><span
+    style='mso-fareast-font-family:"Times New Roman"'>&nbsp;<o:p></o:p></span></p>
+    </td>
+    <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+    <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'>&nbsp;<o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:40'>
+    <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+    <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'>&nbsp;<o:p></o:p></span></p>
+    </td>
+    <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'></td>
+    <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+    <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'><a
+    href="#top"></a><o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:41'>
+    <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+    <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'>Blind
+    identification of MIMO FIR systems driven by quasi-stationary sources using
+    second order statistics:<br>
+    A frequency domain approach <br>
+    <em>IEEE Transactions on Signal Processing, </em>Feb. 2004 <o:p></o:p></span></p>
+    <p class=MsoNormal><strong><span style='mso-fareast-font-family:"Times New Roman"'>Kamran
+    Rahbar, J.P. Reilly, Jonathan H. Manton</span></strong><span
+    style='mso-fareast-font-family:"Times New Roman"'> <span
+    style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span
+    style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span
+    style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><br>
+    <a href="../abstract/kamran_2002.html"><strong>Abstract</strong></a> <span
+    style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><o:p></o:p></span></p>
+    </td>
+    <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+    <p class=MsoNormal align=right style='text-align:right'><a
+    href="../papers/kamran/Kamran_blindMIMO.pdf" target="_blank"><span
+    style='mso-fareast-font-family:"Times New Roman";mso-no-proof:yes;
+    text-decoration:none;text-underline:none'><img border=0 width=32 height=30
+    id="_x0000_i1027" src="../images/display.jpg" alt="display this document"></span></a><span
+    style='mso-fareast-font-family:"Times New Roman"'>&nbsp;<o:p></o:p></span></p>
+    </td>
+    <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+    <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'>&nbsp;<o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:42'>
+    <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+    <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'><o:p>&nbsp;</o:p></span></p>
+    </td>
+    <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+    <p class=MsoNormal align=right style='text-align:right'><span
+    style='mso-fareast-font-family:"Times New Roman"'><o:p>&nbsp;</o:p></span></p>
+    </td>
+    <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+    <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'><o:p>&nbsp;</o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:43'>
+    <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+    <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'><o:p>&nbsp;</o:p></span></p>
+    </td>
+    <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+    <p class=MsoNormal align=right style='text-align:right'><span
+    style='mso-fareast-font-family:"Times New Roman"'><o:p>&nbsp;</o:p></span></p>
+    </td>
+    <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+    <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'><o:p>&nbsp;</o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:44'>
+    <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+    <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'><o:p>&nbsp;</o:p></span></p>
+    </td>
+    <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+    <p class=MsoNormal align=right style='text-align:right'><span
+    style='mso-fareast-font-family:"Times New Roman"'><o:p>&nbsp;</o:p></span></p>
+    </td>
+    <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+    <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'><o:p>&nbsp;</o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:45'>
+    <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+    <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'><o:p>&nbsp;</o:p></span></p>
+    </td>
+    <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+    <p class=MsoNormal align=right style='text-align:right'><span
+    style='mso-fareast-font-family:"Times New Roman"'><o:p>&nbsp;</o:p></span></p>
+    </td>
+    <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+    <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'><o:p>&nbsp;</o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:46;mso-yfti-lastrow:yes'>
+    <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+    <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'><o:p>&nbsp;</o:p></span></p>
+    </td>
+    <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+    <p class=MsoNormal align=right style='text-align:right'><span
+    style='mso-fareast-font-family:"Times New Roman"'><o:p>&nbsp;</o:p></span></p>
+    </td>
+    <td style='padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+    <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'><o:p>&nbsp;</o:p></span></p>
+    </td>
+   </tr>
+  </table>
+  </div>
+  <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman";
+  display:none;mso-hide:all'><o:p>&nbsp;</o:p></span></p>
+<!-- Begin Footer -->
+  <div align=center>
+  <table class=MsoNormalTable border=0 cellpadding=0 width="85%"
+   style='width:85.0%;mso-cellspacing:1.5pt;mso-yfti-tbllook:1184'>
+   <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;mso-yfti-lastrow:yes'>
+    <td style='padding:.75pt .75pt .75pt .75pt'>
+    <p class=MsoNormal align=center style='margin-bottom:12.0pt;text-align:
+    center'><span style='mso-fareast-font-family:"Times New Roman"'><br>
+    <br>
+    <a href="http://www.mcmaster.ca">&copy; McMaster University 2011</a>&nbsp;&nbsp;|
+    &nbsp; <a href="../contact/contact.html">Contact Us</a> &nbsp;&nbsp;|
+    &nbsp; <a href="mailto:spencer@mail.ece.mcmaster.ca">ECE Webmaster</a> <o:p></o:p></span></p>
+    </td>
+   </tr>
+  </table>
+  </div>
+  </td>
+ </tr>
+</table>
+
+</div>
+
+<p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'><o:p>&nbsp;</o:p></span></p>
+
+</div>
+
+</body>
+
+</html>
